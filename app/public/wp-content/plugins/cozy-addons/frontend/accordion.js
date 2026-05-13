@@ -1,0 +1,94 @@
+(function ($) {
+	window["cozyBlockAccordionInit"] = (e) => {
+		const n = e.replace(/-/gi, "_");
+		const blockOptions = window[`cozyAccordion_${n}`];
+		const accordionClass = `#cozyBlock_${n}`;
+		const cozyAccordion = document.querySelector(accordionClass);
+
+		const cozyAccordionItem = cozyAccordion.querySelectorAll(
+			".cozy-block-accordion-item",
+		);
+
+		/* cozyAccordionItem.forEach((item) => {
+			const title = item.querySelector(".cozy-accordion-title");
+
+			const icon = item.querySelector(".accordion-icon-wrapper svg");
+			const iconPath = item.querySelector(".accordion-icon-wrapper svg path");
+
+			title.addEventListener("click", function () {
+				const isActive = this.classList.contains("active");
+
+				// Remove active class from all
+				$(cozyAccordion).find(".cozy-accordion-title").removeClass("active");
+				$(cozyAccordion)
+					.find(".cozy-accordion-content")
+					.removeClass("display-block");
+
+				if (!isActive) {
+					// Open clicked accordion
+					this.classList.add("active");
+					const content = this.nextElementSibling;
+					if (content) {
+						content.classList.add("display-block");
+					}
+
+					// Update to active icon
+					icon.setAttribute(
+						"viewBox",
+						`${blockOptions.icon.activeViewBox.vx} ${blockOptions.icon.activeViewBox.vy} ${blockOptions.icon.activeViewBox.vw} ${blockOptions.icon.activeViewBox.vh}`,
+					);
+					iconPath.setAttribute("d", blockOptions.icon.activePath);
+				} else {
+					// Reset icon when closing
+					icon.setAttribute(
+						"viewBox",
+						`${blockOptions.icon.viewBox.vx} ${blockOptions.icon.viewBox.vy} ${blockOptions.icon.viewBox.vw} ${blockOptions.icon.viewBox.vh}`,
+					);
+					iconPath.setAttribute("d", blockOptions.icon.path);
+				}
+			});
+		}); */
+
+		cozyAccordionItem.forEach((item) => {
+			const title = item.querySelector(".cozy-accordion-title");
+			const content = item.querySelector(".cozy-accordion-content");
+			const icon = item.querySelector(".accordion-icon-wrapper svg");
+			const iconPath = item.querySelector(".accordion-icon-wrapper svg path");
+
+			title.addEventListener("click", () => {
+				const isActive = title.classList.contains("active");
+
+				// Close all accordions + reset icons
+				cozyAccordionItem.forEach((el) => {
+					el.querySelector(".cozy-accordion-title")?.classList.remove("active");
+					el.querySelector(".cozy-accordion-content")?.classList.remove(
+						"display-block",
+					);
+
+					const svg = el.querySelector(".accordion-icon-wrapper svg");
+					const path = el.querySelector(".accordion-icon-wrapper svg path");
+
+					if (svg && path) {
+						svg.setAttribute(
+							"viewBox",
+							`${blockOptions.icon.viewBox.vx} ${blockOptions.icon.viewBox.vy} ${blockOptions.icon.viewBox.vw} ${blockOptions.icon.viewBox.vh}`,
+						);
+						path.setAttribute("d", blockOptions.icon.path);
+					}
+				});
+
+				// Open clicked one if it wasn't active
+				if (!isActive) {
+					title.classList.add("active");
+					content?.classList.add("display-block");
+
+					icon.setAttribute(
+						"viewBox",
+						`${blockOptions.icon.activeViewBox.vx} ${blockOptions.icon.activeViewBox.vy} ${blockOptions.icon.activeViewBox.vw} ${blockOptions.icon.activeViewBox.vh}`,
+					);
+					iconPath.setAttribute("d", blockOptions.icon.activePath);
+				}
+			});
+		});
+	};
+})(jQuery);

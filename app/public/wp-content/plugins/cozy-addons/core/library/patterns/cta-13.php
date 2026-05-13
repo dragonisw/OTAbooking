@@ -1,0 +1,17 @@
+<!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/hero-23.png","dimRatio":0,"focalPoint":{"x":0.5,"y":0.8},"minHeight":450,"contentPosition":"center center","isDark":false,"style":{"spacing":{"padding":{"top":"0","bottom":"0px","left":"0","right":"0"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"100%"},"cozyAnimation":{"type":"fade-up","easingFunction":"ease-in","anchorPlacement":"top-bottom","duration":600}} -->
+<div class="wp-block-cover is-light" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0px;padding-left:0;min-height:450px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/hero-23.png" style="object-position:50% 80%" data-object-fit="cover" data-object-position="50% 80%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"30px","bottom":"30px"}},"color":{"text":"#646464"},"elements":{"link":{"color":{"text":"#646464"}}},"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"400","lineHeight":1.6}},"layout":{"type":"constrained","contentSize":"733px"},"cozyCustomFont":"Work Sans"} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#646464;margin-top:0;margin-bottom:0;padding-top:30px;padding-right:26px;padding-bottom:30px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"color":{"text":"#000000"},"elements":{"link":{"color":{"text":"#000000"}}},"typography":{"fontSize":"48px","lineHeight":"1.2","fontStyle":"normal","fontWeight":"600"}}} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#000000;font-size:48px;font-style:normal;font-weight:600;line-height:1.2"><?php esc_html_e( 'Let’s Work Together on Your Next Project', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"16px","bottom":"36px"}}}} -->
+<p class="has-text-align-center" style="margin-top:16px;margin-bottom:36px"><?php esc_html_e( 'Frustrated by a slow website? We’ll help you tame those speed demons so you can keep visitors coming back for more!', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons" style="font-style:normal;font-weight:500"><!-- wp:button {"style":{"color":{"background":"#3767ff","text":"#fffffe"},"elements":{"link":{"color":{"text":"#fffffe"}}},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#6a6a6a00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="color:#fffffe;background-color:#3767ff;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'Let\'s Talk!', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->

@@ -1,0 +1,29 @@
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"80px","bottom":"80px","left":"26px","right":"26px"},"blockGap":"0"},"color":{"background":"#f9f9f9","text":"#575d5c"},"elements":{"link":{"color":{"text":"#575d5c"}}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"1180px"},"cozyCustomFont":"Inter"} -->
+<div class="wp-block-group has-text-color has-background has-link-color" style="color:#575d5c;background-color:#f9f9f9;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"44px","left":"26px"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"45%","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"570px","justifyContent":"left"}} -->
+<div class="wp-block-column" style="flex-basis:45%"><!-- wp:image {"scale":"cover","sizeSlug":"large","align":"center","cozyAnimation":{"type":"flip-right","easingFunction":"ease","anchorPlacement":"top-center","duration":600}} -->
+<figure class="wp-block-image aligncenter size-large"><img src="https://plugins.cozythemes.com/cozy-addons/assets/media/about-us-47.png" alt="" style="object-fit:cover"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","layout":{"type":"constrained","contentSize":"604px"}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"style":{"color":{"text":"#021a15"},"elements":{"link":{"color":{"text":"#021a15"}}},"typography":{"fontSize":"48px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2","textTransform":"uppercase"}}} -->
+<h2 class="wp-block-heading has-text-color has-link-color" style="color:#021a15;font-size:48px;font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase"><?php esc_html_e( 'Welcome to the Gymfinity template', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"24px","bottom":"24px"}}}} -->
+<p style="margin-top:24px;margin-bottom:24px"><?php esc_html_e( 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes.', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><?php esc_html_e( 'Avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"34px"},"blockGap":{"top":"0","left":"0"}},"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"}},"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:34px;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"type":"cozy-block-btn","style":{"color":{"background":"#0eb290"},"border":{"radius":"0px","color":"#0eb290","style":"solid","width":"1px"},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}}},"icon":{"enabled":true,"path":"M19.3651 12.56L14.3851 17.56C14.2251 17.72 14.0251 17.8 13.8251 17.8C13.6251 17.8 13.4251 17.72 13.2651 17.56C12.9451 17.24 12.9451 16.74 13.2651 16.42L16.8851 12.78H5.20511C4.76511 12.78 4.40511 12.42 4.40511 11.98C4.40511 11.54 4.76511 11.18 5.20511 11.18H16.8851L13.2651 7.54001C12.9451 7.22001 12.9451 6.72 13.2651 6.4C13.5851 6.08 14.0851 6.08 14.4051 6.4L19.3851 11.4C19.6851 11.74 19.6851 12.26 19.3651 12.56Z","viewBox":{"vx":"0","vy":"0","vw":"24","vh":"24"},"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"top":"-2px","bottom":"0px"},"boxWidth":"16px","boxHeight":"16px","size":"24px","rotate":310,"gap":"6px","position":"after","border":{"width":"","style":"","color":""},"radius":"","color":{"text":"#fff","textHover":"#0eb290","bg":"","bgHover":"","borderHover":""}},"cozyHoverStyles":{"bgColor":"#fffffe","color":"#0eb290","borderColor":"#ffffff00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-background has-border-color wp-element-button" style="border-color:#0eb290;border-style:solid;border-width:1px;border-radius:0px;background-color:#0eb290;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'Learn More', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

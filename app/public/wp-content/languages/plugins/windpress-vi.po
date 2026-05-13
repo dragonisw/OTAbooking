@@ -1,0 +1,136 @@
+# Translation of Plugins - WindPress &#8211; Tailwind CSS integration for WordPress - Stable (latest release) in Vietnamese
+# This file is distributed under the same license as the Plugins - WindPress &#8211; Tailwind CSS integration for WordPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-04-10 08:50:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Plugins - WindPress &#8211; Tailwind CSS integration for WordPress - Stable (latest release)\n"
+
+#: src/Integration/LiveCanvas/Main.php:43 build/wp-i18n.js:89
+msgid "LiveCanvas integration"
+msgstr "Tích hợp LiveCanvas"
+
+#: src/Integration/LiveCanvas/Main.php:43 build/wp-i18n.js:88
+msgid "LiveCanvas"
+msgstr "LiveCanvas"
+
+#: src/Core/Cache.php:87 build/wp-i18n.js:69
+msgid "The callback should return an array"
+msgstr "Hàm gọi lại nên trả về một mảng"
+
+#: src/Api/Admin/Settings/Options.php:50 build/wp-i18n.js:67
+msgid "Settings updated"
+msgstr "Cài đặt đã được cập nhật"
+
+#: src/Api/Admin/Settings/License.php:66 build/wp-i18n.js:66
+msgid "Plugin license key de-activated successfully"
+msgstr "Khóa giấy phép plugin đã được hủy kích hoạt thành công"
+
+#: src/Api/Admin/Settings/License.php:58 build/wp-i18n.js:65
+msgid "Plugin license key activated successfully"
+msgstr "Khóa giấy phép plugin đã được kích hoạt thành công"
+
+#: src/Api/Admin/Settings/License.php:50 build/wp-i18n.js:64
+msgid "An error occurred, please try again."
+msgstr "Đã xảy ra lỗi, vui lòng thử lại."
+
+#: src/Api/Admin/Settings/License.php:45 build/wp-i18n.js:63
+msgid "License key is empty"
+msgstr "Khóa giấy phép trống"
+
+#: src/Api/Admin/Settings/Cache.php:95 build/wp-i18n.js:61
+msgid "The provider not found"
+msgstr "Nhà cung cấp không tìm thấy"
+
+#: src/Api/Admin/ThemeJson.php:38 src/Api/Admin/Volume.php:44
+#: build/wp-i18n.js:68
+msgid "data stored successfully"
+msgstr "dữ liệu đã được lưu thành công"
+
+#: src/Api/Admin/Settings/Cache.php:102 build/wp-i18n.js:62
+msgid "Provider error: "
+msgstr "Lỗi nhà cung cấp: "
+
+#: src/Api/Admin/Settings/Cache.php:70 build/wp-i18n.js:60
+msgid "Save cache error: "
+msgstr "Lỗi lưu bộ nhớ cache: "
+
+#. Description of the plugin
+#: windpress.php build/wp-i18n.js:5
+msgid "Integrate Tailwind CSS into WordPress seamlessly, in just seconds. Works well with the block editor, page builders, plugins, themes, and custom code."
+msgstr "Tích hợp Tailwind CSS vào WordPress liền mạch, chỉ trong vài giây. Hoạt động tốt với trình chỉnh sửa khối, trình tạo trang, plugin, theme và mã tùy chỉnh."
+
+#: src/Integration/Timber/Main.php:36 build/wp-i18n.js:97
+msgid "Timber integration"
+msgstr "Tích hợp Timber"
+
+#: src/Integration/Timber/Main.php:36 build/wp-i18n.js:96
+msgid "Timber"
+msgstr "Timber"
+
+#: src/Integration/Kadence/Main.php:37 build/wp-i18n.js:87
+msgid "The Kadence WP integration. It requires the Gutenberg/Block Editor integration enabled."
+msgstr "Tích hợp Kadence WP. Yêu cầu tích hợp Gutenberg/Block Editor được bật."
+
+#: src/Integration/Kadence/Main.php:37 build/wp-i18n.js:86
+msgid "Kadence WP"
+msgstr "Kadence WP"
+
+#: src/Integration/Gutenberg/Main.php:42 build/wp-i18n.js:85
+msgid "Gutenberg/Block Editor integration"
+msgstr "Tích hợp Gutenberg/Block Editor"
+
+#: src/Integration/Gutenberg/Main.php:42 build/wp-i18n.js:84
+msgid "Gutenberg"
+msgstr "Gutenberg"
+
+#: src/Integration/GreenShift/Main.php:37 build/wp-i18n.js:83
+msgid "The GreenShift integration. It requires the Gutenberg/Block Editor integration enabled."
+msgstr "Tích hợp GreenShift. Yêu cầu tích hợp Gutenberg/Block Editor được bật."
+
+#: src/Integration/GreenShift/Main.php:37 build/wp-i18n.js:82
+msgid "GreenShift"
+msgstr "GreenShift"
+
+#: src/Integration/Elementor/Main.php:39 build/wp-i18n.js:79
+msgid "Elementor integration"
+msgstr "Tích hợp Elementor"
+
+#: src/Integration/Elementor/Main.php:39 build/wp-i18n.js:78
+msgid "Elementor"
+msgstr "Elementor"
+
+#. translators: 1: plugin name, 2: list of requirements
+#: src/Utils/Requirement.php:123 build/wp-i18n.js:102
+msgid "The %1$s plugin minimum requirements are not met:"
+msgstr "Yêu cầu tối thiểu của plugin %1$s chưa được đáp ứng:"
+
+#: src/Plugin.php:180 build/assets/dashboard-B5b0-6y3.js:21
+#: build/assets/General-CUZ0JseD.js:1 build/wp-i18n.js:101
+msgid "Upgrade to Pro"
+msgstr "Nâng cấp lên Pro"
+
+#: src/Plugin.php:178 build/assets/dashboard-B5b0-6y3.js:21
+#: build/assets/Settings-CKP4RyR6.js:1 build/wp-i18n.js:100
+msgid "Settings"
+msgstr "Cài đặt"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: windpress.php build/wp-i18n.js:4
+msgid "https://wind.press"
+msgstr "https://wind.press"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: windpress.php src/Admin/AdminPage.php:30 src/Admin/AdminPage.php:31
+#: build/assets/integration/gutenberg/block-editor-D3u1ppeW.js:4
+#: build/assets/integration/gutenberg/modules/generate-cache-BqrFlvho.js:1
+#: build/wp-i18n.js:3
+msgid "WindPress"
+msgstr "WindPress"

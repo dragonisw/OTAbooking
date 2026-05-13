@@ -1,0 +1,19 @@
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"0","padding":{"right":"0","left":"0","top":"0","bottom":"0"}},"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"400","lineHeight":"1.6"}},"layout":{"type":"constrained","contentSize":"100%"},"cozyCustomFont":"Inter"} -->
+<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:18px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/cta-33.png","hasParallax":true,"dimRatio":0,"minHeight":500,"isDark":false,"style":{"spacing":{"padding":{"right":"26px","left":"26px"}}},"layout":{"type":"constrained","contentSize":"1180px"}} -->
+<div class="wp-block-cover is-light has-parallax" style="padding-right:26px;padding-left:26px;min-height:500px"><div class="wp-block-cover__image-background has-parallax" style="background-position:50% 50%;background-image:url(https://plugins.cozythemes.com/cozy-addons/assets/media/cta-33.png)"></div><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","bottom":"0px","left":"0","right":"0"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"630px","justifyContent":"left"}} -->
+<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0px;padding-right:0;padding-bottom:0px;padding-left:0"><!-- wp:heading {"textAlign":"left","style":{"typography":{"lineHeight":"1.2","fontStyle":"normal","fontWeight":"400","fontSize":"54px"},"color":{"text":"#1C1C02"},"elements":{"link":{"color":{"text":"#1C1C02"}}}},"cozyCustomFont":"Inter"} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#1C1C02;font-size:54px;font-style:normal;font-weight:400;line-height:1.2"><?php esc_html_e( 'Designed Inspired by Art', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"left","style":{"color":{"text":"#6a6a6a"},"elements":{"link":{"color":{"text":"#6a6a6a"}}},"spacing":{"margin":{"top":"16px"}}}} -->
+<p class="has-text-align-left has-text-color has-link-color" style="color:#6a6a6a;margin-top:16px"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"400","textTransform":"uppercase"},"spacing":{"margin":{"top":"26px"}}},"layout":{"type":"flex","justifyContent":"left"},"cozyCustomFont":"Inter"} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:26px;font-size:18px;font-style:normal;font-weight:400;text-transform:uppercase"><!-- wp:button {"textAlign":"center","style":{"color":{"text":"#fffffe"},"elements":{"link":{"color":{"text":"#fffffe"}}},"border":{"radius":"0px"},"spacing":{"padding":{"left":"28px","right":"28px","top":"16px","bottom":"16px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-link-color has-text-align-center wp-element-button" style="border-radius:0px;color:#fffffe;padding-top:16px;padding-right:28px;padding-bottom:16px;padding-left:28px"><?php esc_html_e( 'Shop Collection', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:group -->

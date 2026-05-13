@@ -1,0 +1,33 @@
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"80px","bottom":"80px"},"blockGap":"0"},"color":{"text":"#000000","background":"#fffffe"},"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"400","lineHeight":1.6},"elements":{"link":{"color":{"text":"#000000"}}}},"layout":{"type":"constrained","contentSize":"1180px"},"cozyCustomFont":"Urbanist"} -->
+<div class="wp-block-group has-text-color has-background has-link-color" style="color:#000000;background-color:#fffffe;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"#011436"}}},"typography":{"fontSize":"44px","fontStyle":"normal","fontWeight":"500","textTransform":"none","lineHeight":"1.3"},"color":{"text":"#011436"},"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"cozyCustomFont":"Inter Tight"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#011436;margin-top:0px;margin-bottom:0px;font-size:44px;font-style:normal;font-weight:500;line-height:1.3;text-transform:none"><strong><?php esc_html_e( 'Latest Articles', 'cozy-addons' ); ?></strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"44px","bottom":"0px"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="margin-top:44px;margin-bottom:0px"><!-- wp:cozy-block/post-carousel {"blockClientId":"b716f91b-b6ee-435d-a83d-35304e118046","layout":"grid","hoverShow":false,"gridOptions":{"displayColumn":1,"masonryEnabled":false,"columnGap":26},"carouselOptions":{"pagination":{"enabled":true,"width":6,"height":6,"borderRadius":10,"activeWidth":10,"activeHeight":10,"activeBorder":{"color":"#0d51ff42","style":"solid","width":"4px"},"activeOffset":0,"gap":4,"activeBorderRadius":10,"activeColor":"#0c50ff","color":"#252525","colorHover":"#ff9900","align":"center","positionVertical":-52,"left":"0px","right":"0px"},"navigation":{"enabled":true,"iconSize":18,"iconBoxWidth":40,"iconBoxHeight":40,"border":{"width":"","style":"","color":""},"borderRadius":50,"backgroundColor":"#0c50ff","color":"#fffffe","backgroundColorHover":"#ff9900","colorHover":"#fffffe","borderHover":""},"sliderOptions":{"autoplay":{"enabled":true,"pauseOnMouseEnter":true,"reverseDirection":false,"delay":2500},"loop":true,"centeredSlides":false,"slidesPerView":3,"spaceBetween":26,"speed":1500}}} -->
+<div class="cozy-block-post-grid-wrapper  " id="cozyBlock_b716f91b_b6ee_435d_a83d_35304e118046"><!-- wp:query {"queryId":1,"query":{"perPage":3,"postType":"post","offset":0},"lock":{"move":false,"remove":false},"className":"cozy-query swiper-container"} -->
+<div class="wp-block-query cozy-query swiper-container"><!-- wp:post-template {"lock":{"move":false,"remove":true},"className":"cozy-layout-grid swiper-wrapper","style":{"spacing":{"blockGap":"0"}}} -->
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"26px","left":"26px"},"margin":{"top":"0","bottom":"14px"},"padding":{"bottom":"26px"}},"border":{"bottom":{"color":"#01143624","style":"solid","width":"1px"}}}} -->
+<div class="wp-block-columns" style="border-bottom-color:#01143624;border-bottom-style:solid;border-bottom-width:1px;margin-top:0;margin-bottom:14px;padding-bottom:26px"><!-- wp:column {"width":"","style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column"><!-- wp:post-title {"level":3,"isLink":true,"linkTarget":"_blank","style":{"color":{"text":"#1d201f"},"elements":{"link":{"color":{"text":"#1d201f"}}},"typography":{"fontSize":"24px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"spacing":{"margin":{"top":"0px","bottom":"0px"}}}} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"25%","style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:post-date {"format":"M j, Y","style":{"color":{"text":"#4c4c4c"},"elements":{"link":{"color":{"text":"#4c4c4c"}}}}} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"40%","style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:post-excerpt {"excerptLength":20,"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"}}}} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
+<!-- /wp:cozy-block/post-carousel --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"uppercase","fontSize":"14px"},"spacing":{"margin":{"top":"36px"}}},"layout":{"type":"flex","justifyContent":"left"},"cozyCustomFont":"Roboto"} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:36px;font-size:14px;font-style:normal;font-weight:400;text-transform:uppercase"><!-- wp:button {"type":"cozy-block-btn","style":{"color":{"background":"#dedede00","text":"#011436"},"elements":{"link":{"color":{"text":"#011436"}}},"spacing":{"padding":{"left":"0px","right":"0px","top":"0","bottom":"0"}}},"icon":{"enabled":true,"path":"M19.3651 12.56L14.3851 17.56C14.2251 17.72 14.0251 17.8 13.8251 17.8C13.6251 17.8 13.4251 17.72 13.2651 17.56C12.9451 17.24 12.9451 16.74 13.2651 16.42L16.8851 12.78H5.20511C4.76511 12.78 4.40511 12.42 4.40511 11.98C4.40511 11.54 4.76511 11.18 5.20511 11.18H16.8851L13.2651 7.54001C12.9451 7.22001 12.9451 6.72 13.2651 6.4C13.5851 6.08 14.0851 6.08 14.4051 6.4L19.3851 11.4C19.6851 11.74 19.6851 12.26 19.3651 12.56Z","viewBox":{"vx":"0","vy":"0","vw":"24","vh":"24"},"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"top":"-3px","bottom":"0px"},"boxWidth":"22px","boxHeight":"22px","size":"22px","rotate":312,"gap":"0px","position":"after","border":{"width":"","style":"","color":""},"radius":"","color":{"text":"#011436","textHover":"#ff9900","bg":"","bgHover":"","borderHover":""}},"cozyHoverStyles":{"bgColor":"#dedede00","color":"#ff9900","borderColor":""}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="color:#011436;background-color:#dedede00;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px"><?php esc_html_e( 'Read More', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->

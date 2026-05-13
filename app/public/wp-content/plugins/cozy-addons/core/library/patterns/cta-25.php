@@ -1,0 +1,23 @@
+<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/cta-17.png","dimRatio":60,"customOverlayColor":"#011a08","isUserOverlayColor":true,"minHeight":300,"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"1180px"},"cozyAnimation":{"type":"zoom-in-up","easingFunction":"ease","anchorPlacement":"top-center","duration":800}} -->
+<div class="wp-block-cover" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:26px;padding-bottom:0;padding-left:26px;min-height:300px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/cta-17.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim" style="background-color:#011a08"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"blockGap":{"top":"26px","left":"16px"},"margin":{"top":"0","bottom":"0"},"padding":{"top":"36px","bottom":"36px","left":"0px","right":"0px"}},"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"400","lineHeight":1.6},"color":{"text":"#ebebeb"},"elements":{"link":{"color":{"text":"#ebebeb"}}}},"cozyCustomFont":"Public Sans"} -->
+<div class="wp-block-columns has-text-color has-link-color" style="color:#ebebeb;margin-top:0;margin-bottom:0;padding-top:36px;padding-right:0px;padding-bottom:36px;padding-left:0px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"529px","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"style":{"typography":{"fontSize":"38px","lineHeight":"1.2","fontStyle":"italic","fontWeight":"500","textTransform":"capitalize"},"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"text":"#fffffe"}},"cozyCustomFont":"Roboto Serif"} -->
+<h2 class="wp-block-heading has-text-color has-link-color" style="color:#fffffe;font-size:38px;font-style:italic;font-weight:500;line-height:1.2;text-transform:capitalize"><?php esc_html_e( 'Do You Need Legal Help?', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"8px","bottom":"0px"}}}} -->
+<p style="margin-top:8px;margin-bottom:0px"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:buttons {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","justifyContent":"right"},"cozyCustomFont":"Roboto Serif"} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:0;margin-bottom:0;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"color":{"background":"#e8436b","text":"#fffffe"},"elements":{"link":{"color":{"text":"#fffffe"}}},"spacing":{"padding":{"left":"38px","right":"38px","top":"16px","bottom":"16px"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"0px","bottomRight":"0px"}}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#2e2e2e00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;color:#fffffe;background-color:#e8436b;padding-top:16px;padding-right:38px;padding-bottom:16px;padding-left:38px"><?php esc_html_e( 'Get an Appointment', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:group -->

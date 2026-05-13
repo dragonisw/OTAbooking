@@ -1,0 +1,14 @@
+node_modules
+.git
+.github
+.gitignore
+.editorconfig
+package.json
+package-lock.json
+webpack.config.js
+composer.json
+tests
+*.md
+*.sh
+wp-assets
+src

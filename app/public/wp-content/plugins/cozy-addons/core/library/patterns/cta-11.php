@@ -1,0 +1,27 @@
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"120px","bottom":"80px"},"blockGap":"0"},"color":{"text":"#d9d9d9"},"elements":{"link":{"color":{"text":"#d9d9d9"}}},"typography":{"fontSize":"16px","lineHeight":"1.6","fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"1180px"},"cozyCustomFont":"Inter"} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#d9d9d9;margin-top:0;margin-bottom:0;padding-top:120px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:group {"style":{"spacing":{"padding":{"top":"80px","bottom":"0px","left":"26px","right":"26px"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"color":{"background":"#001216"},"background":{"backgroundImage":{"url":"http://localhost:8010/wp-content/uploads/2025/11/cta-6.png","id":3210,"source":"file","title":"cta-6"},"backgroundSize":"cover"},"border":{"radius":"40px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group has-background" style="border-radius:40px;background-color:#001216;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:0px;padding-left:26px"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"blockGap":{"top":"100px","left":"0px"},"margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"center","width":"","style":{"spacing":{"blockGap":"0","padding":{"right":"26px","left":"26px","top":"40px","bottom":"60px"}}},"layout":{"type":"constrained","contentSize":"620px","justifyContent":"center"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-top:40px;padding-right:26px;padding-bottom:60px;padding-left:26px"><!-- wp:heading {"textAlign":"left","style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"typography":{"fontSize":"44px","fontStyle":"normal","fontWeight":"600","textTransform":"none","lineHeight":"1.3"},"spacing":{"margin":{"top":"0px","bottom":"0px"}},"color":{"text":"#fffffe"}},"cozyCustomFont":"Poppins"} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#fffffe;margin-top:0px;margin-bottom:0px;font-size:44px;font-style:normal;font-weight:600;line-height:1.3;text-transform:none"><?php esc_html_e( 'Ready to Find Your Perfect Home? Reach Out Today!', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"26px","bottom":"44px"}}}} -->
+<p style="margin-top:26px;margin-bottom:44px"><?php esc_html_e( 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"0px","bottom":"0"}}},"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:0px;margin-bottom:0;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#001216"}}},"color":{"text":"#001216","background":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"12px","bottom":"12px"}},"border":{"radius":"0px","color":"#fffffe","style":"solid","width":"1px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color wp-element-button" href="#" style="border-color:#fffffe;border-style:solid;border-width:1px;border-radius:0px;color:#001216;background-color:#fffffe;padding-top:12px;padding-right:36px;padding-bottom:12px;padding-left:36px"><?php esc_html_e( 'Contact Us', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"","cozyResponsiveShow":{"desktopShow":true,"tabletShow":false,"tabletViewport":980,"mobileShow":false,"mobileViewport":767}} -->
+<div class="wp-block-column"><!-- wp:image {"scale":"contain","sizeSlug":"large","align":"center","style":{"spacing":{"margin":{"top":"-102px"}}},"cozyHoverEffect":{"hasOverflow":false,"overflow":"hidden","hasZIndex":false,"zIndex":0,"boxShadow":{"enabled":false,"color":"#000","horizontal":0,"vertical":0,"blur":10,"spread":0,"position":""},"boxShadowHover":{"enabled":false,"color":"#000","horizontal":0,"vertical":0,"blur":10,"spread":0,"position":""},"transformEnabled":true,"transform":{"translateX":0,"translateY":0,"rotate":0,"scale":2},"transformDefaultEnabled":true,"transformDefault":{"translateX":0,"translateY":0,"rotate":0,"scale":2}}} -->
+<figure class="wp-block-image aligncenter size-large" style="margin-top:-102px"><img src="https://plugins.cozythemes.com/cozy-addons/assets/media/cta-7.png" alt="" style="object-fit:contain"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

@@ -1,0 +1,22 @@
+[20-Apr-2026 07:47:43 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Minh\Local Sites\booking\app\public\wp-content\themes\booking-agency\functions.php on line 7
+[20-Apr-2026 07:47:44 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Minh\Local Sites\booking\app\public\wp-content\themes\booking-agency\functions.php on line 7
+[21-Apr-2026 02:33:03 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 115458984 bytes) in C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-scripts.php on line 646
+[21-Apr-2026 02:34:50 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 115458984 bytes) in C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-scripts.php on line 646
+[21-Apr-2026 02:35:47 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 115458984 bytes) in C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-scripts.php on line 646
+[21-Apr-2026 02:38:15 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 115458984 bytes) in C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-scripts.php on line 646
+[21-Apr-2026 02:48:28 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 115458984 bytes) in C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-scripts.php on line 646
+[21-Apr-2026 03:17:37 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Minh\Local Sites\booking\app\public\wp-content\themes\patterns-agency-child\page-contact.php on line 21
+[22-Apr-2026 02:17:50 UTC] PHP Warning:  Constant WP_DEBUG already defined in C:\Users\Minh\Local Sites\booking\app\public\wp-config.php on line 96
+[22-Apr-2026 02:17:51 UTC] PHP Warning:  Constant WP_DEBUG already defined in C:\Users\Minh\Local Sites\booking\app\public\wp-config.php on line 96
+[04-May-2026 01:56:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_core_updates() in C:\Users\Minh\Local Sites\booking\app\public\wp-admin\includes\class-wp-debug-data.php:156
+Stack trace:
+#0 C:\Users\Minh\Local Sites\booking\app\public\wp-admin\includes\class-wp-debug-data.php(47): WP_Debug_Data::get_wp_core()
+#1 C:\Users\Minh\Local Sites\booking\app\public\wp-content\plugins\advanced-import\admin\class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#2 C:\Users\Minh\Local Sites\booking\app\public\wp-content\plugins\advanced-import\admin\class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#3 C:\Users\Minh\Local Sites\booking\app\public\wp-content\plugins\advanced-import\admin\class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#4 C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-hook.php(341): Advanced_Import_Tracking->do_post()
+#5 C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#6 C:\Users\Minh\Local Sites\booking\app\public\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#7 C:\Users\Minh\Local Sites\booking\app\public\wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#8 {main}
+  thrown in C:\Users\Minh\Local Sites\booking\app\public\wp-admin\includes\class-wp-debug-data.php on line 156

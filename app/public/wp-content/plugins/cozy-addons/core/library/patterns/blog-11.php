@@ -1,0 +1,23 @@
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"80px","bottom":"80px"},"blockGap":"0"},"color":{"text":"#011436","background":"#f1f6ff"},"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"400","lineHeight":1.6},"elements":{"link":{"color":{"text":"#011436"}}}},"layout":{"type":"constrained","contentSize":"1180px"},"cozyCustomFont":"Urbanist"} -->
+<div class="wp-block-group has-text-color has-background has-link-color" style="color:#011436;background-color:#f1f6ff;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"#011436"}}},"typography":{"fontSize":"48px","fontStyle":"normal","fontWeight":"500","textTransform":"none","lineHeight":"1.3"},"color":{"text":"#011436"},"spacing":{"margin":{"top":"0px","bottom":"44px"}}},"cozyCustomFont":"Inter Tight"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#011436;margin-top:0px;margin-bottom:44px;font-size:48px;font-style:normal;font-weight:500;line-height:1.3;text-transform:none"><strong><?php esc_html_e( 'Latest Articles', 'cozy-addons' ); ?></strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:cozy-block/post-carousel {"blockClientId":"4c5f51a2-4b2e-49ae-b6e5-6cee13c73e17","layout":"grid","hoverShow":false,"gridOptions":{"displayColumn":3,"masonryEnabled":false,"columnGap":26},"carouselOptions":{"pagination":{"enabled":true,"width":6,"height":6,"borderRadius":10,"activeWidth":10,"activeHeight":10,"activeBorder":{"color":"#0d51ff42","style":"solid","width":"4px"},"activeOffset":0,"gap":4,"activeBorderRadius":10,"activeColor":"#0c50ff","color":"#252525","colorHover":"#ff9900","align":"center","positionVertical":-52,"left":"0px","right":"0px"},"navigation":{"enabled":true,"iconSize":18,"iconBoxWidth":40,"iconBoxHeight":40,"border":{"width":"","style":"","color":""},"borderRadius":50,"backgroundColor":"#0c50ff","color":"#fffffe","backgroundColorHover":"#ff9900","colorHover":"#fffffe","borderHover":""},"sliderOptions":{"autoplay":{"enabled":true,"pauseOnMouseEnter":true,"reverseDirection":false,"delay":2500},"loop":true,"centeredSlides":false,"slidesPerView":3,"spaceBetween":26,"speed":1500}}} -->
+<div class="cozy-block-post-grid-wrapper  " id="cozyBlock_4c5f51a2_4b2e_49ae_b6e5_6cee13c73e17"><!-- wp:query {"queryId":1,"query":{"perPage":3,"postType":"post","offset":0},"lock":{"move":false,"remove":true},"className":"cozy-query swiper-container"} -->
+<div class="wp-block-query cozy-query swiper-container"><!-- wp:post-template {"lock":{"move":false,"remove":true},"className":"cozy-layout-grid swiper-wrapper","style":{"spacing":{"blockGap":"0"}}} -->
+<!-- wp:post-featured-image {"height":"270px","style":{"border":{"radius":{"topLeft":"20px","topRight":"20px"}},"spacing":{"margin":{"right":"0","left":"0","top":"0","bottom":"0"}}}} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0px"},"padding":{"right":"26px","left":"26px","top":"26px","bottom":"26px"}},"color":{"background":"#fffffe"},"border":{"radius":{"bottomLeft":"20px","bottomRight":"20px"}}},"layout":{"type":"constrained","justifyContent":"left","contentSize":"508px"}} -->
+<div class="wp-block-group has-background" style="border-bottom-left-radius:20px;border-bottom-right-radius:20px;background-color:#fffffe;margin-top:0;margin-bottom:0px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px"><!-- wp:post-terms {"term":"category","separator":"","className":"ca-pattern__category-pills ca-blog-11","style":{"typography":{"fontSize":"12px","fontStyle":"normal","fontWeight":"400"}}} /-->
+
+<!-- wp:post-title {"level":3,"isLink":true,"linkTarget":"_blank","style":{"color":{"text":"#1d201f"},"elements":{"link":{"color":{"text":"#1d201f"}}},"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"spacing":{"margin":{"top":"16px"}}}} /-->
+
+<!-- wp:post-excerpt {"excerptLength":15,"style":{"spacing":{"margin":{"top":"16px","bottom":"0px"}}}} /-->
+
+<!-- wp:read-more {"content":"Read More","style":{"color":{"text":"#011436"},"elements":{"link":{"color":{"text":"#011436"}}},"spacing":{"padding":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"margin":{"top":"16px","bottom":"12px"}},"border":{"radius":"100px"},"typography":{"fontStyle":"normal","fontWeight":"500","fontSize":"14px","textTransform":"uppercase"}}} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
+<!-- /wp:cozy-block/post-carousel --></div>
+<!-- /wp:group -->

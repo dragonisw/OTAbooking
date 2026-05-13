@@ -1,0 +1,305 @@
+[
+	{
+		"label": "Author",
+		"slug": "cozy-addons/template-1",
+		"category": ["author", "portfolio"],
+		"image": "template-1.png",
+		"isPremium": false
+	},
+	{
+		"label": "Charity",
+		"slug": "cozy-addons/template-2",
+		"category": ["charity"],
+		"image": "template-2.png",
+		"isPremium": true
+	},
+	{
+		"label": "App Launcher",
+		"slug": "cozy-addons/template-3",
+		"category": ["saas"],
+		"image": "template-3.png",
+		"isPremium": true
+	},
+	{
+		"label": "Real Estate Agency",
+		"slug": "cozy-addons/template-4",
+		"category": ["home-services"],
+		"image": "template-4.png",
+		"isPremium": true
+	},
+	{
+		"label": "Pet Services",
+		"slug": "cozy-addons/template-5",
+		"category": ["business"],
+		"image": "template-5.png",
+		"isPremium": true
+	},
+	{
+		"label": "BlockBooster",
+		"slug": "cozy-addons/template-6",
+		"category": ["agency"],
+		"image": "template-6.png",
+		"isPremium": false
+	},
+	{
+		"label": "Bakery and Pastry",
+		"slug": "cozy-addons/template-7",
+		"category": ["hotels-&-restaurants"],
+		"image": "template-7.png",
+		"isPremium": false
+	},
+	{
+		"label": "Health and Fitness Coach",
+		"slug": "cozy-addons/template-8",
+		"category": ["business"],
+		"image": "template-8.png",
+		"isPremium": false
+	},
+	{
+		"label": "Business Minimal",
+		"slug": "cozy-addons/template-9",
+		"category": ["business", "agency"],
+		"image": "template-9.png",
+		"isPremium": false
+	},
+	{
+		"label": "Resort",
+		"slug": "cozy-addons/template-10",
+		"category": ["hotels-&-restaurants"],
+		"image": "template-10.png",
+		"isPremium": true
+	},
+	{
+		"label": "Portfolio",
+		"slug": "cozy-addons/template-11",
+		"category": ["portfolio"],
+		"image": "template-11.png",
+		"isPremium": true
+	},
+	{
+		"label": "BlockMonster",
+		"slug": "cozy-addons/template-12",
+		"category": ["business", "agency"],
+		"image": "template-12.png",
+		"isPremium": false
+	},
+	{
+		"label": "Handyman Services",
+		"slug": "cozy-addons/template-13",
+		"category": ["home-services"],
+		"image": "template-13.png",
+		"isPremium": true
+	},
+	{
+		"label": "Hello Founder",
+		"slug": "cozy-addons/template-14",
+		"category": ["portfolio", "saas"],
+		"image": "template-14.png",
+		"isPremium": true
+	},
+	{
+		"label": "Chatbot",
+		"slug": "cozy-addons/template-15",
+		"category": ["saas"],
+		"image": "template-15.png",
+		"isPremium": true
+	},
+	{
+		"label": "Worksy",
+		"slug": "cozy-addons/template-16",
+		"category": ["agency"],
+		"image": "template-16.png",
+		"isPremium": false
+	},
+	{
+		"label": "Photography Studios",
+		"slug": "cozy-addons/template-17",
+		"category": ["photography", "business", "portfolio"],
+		"image": "template-17.png",
+		"isPremium": true
+	},
+	{
+		"label": "Entrepreneur/Social Influencer",
+		"slug": "cozy-addons/template-18",
+		"category": ["business", "portfolio"],
+		"image": "template-18.png",
+		"isPremium": true
+	},
+	{
+		"label": "Portfolio Design",
+		"slug": "cozy-addons/template-19",
+		"category": ["portfolio"],
+		"image": "template-19.png",
+		"isPremium": false
+	},
+	{
+		"label": "Fitness/Gym centers",
+		"slug": "cozy-addons/template-20",
+		"category": ["business"],
+		"image": "template-20.png",
+		"isPremium": true
+	},
+	{
+		"label": "College & University",
+		"slug": "cozy-addons/template-21",
+		"category": ["education"],
+		"image": "template-21.png",
+		"isPremium": true
+	},
+	{
+		"label": "Finance Services",
+		"slug": "cozy-addons/template-22",
+		"category": ["business", "agency"],
+		"image": "template-22.png",
+		"isPremium": true
+	},
+	{
+		"label": "Photography",
+		"slug": "cozy-addons/template-23",
+		"category": ["photography", "business"],
+		"image": "template-23.png",
+		"isPremium": false
+	},
+	{
+		"label": "Minimal Traveller magazine/blog",
+		"slug": "cozy-addons/template-24",
+		"category": ["blog"],
+		"image": "template-24.png",
+		"isPremium": false
+	},
+	{
+		"label": "Lawyer",
+		"slug": "cozy-addons/template-25",
+		"category": ["business"],
+		"image": "template-25.png",
+		"isPremium": true
+	},
+	{
+		"label": "Orakus",
+		"slug": "cozy-addons/template-26",
+		"category": ["hotels-&-restaurants"],
+		"image": "template-26.png",
+		"isPremium": true
+	},
+	{
+		"label": "Business Corporates",
+		"slug": "cozy-addons/template-27",
+		"category": ["business", "agency"],
+		"image": "template-27.png",
+		"isPremium": true
+	},
+	{
+		"label": "Webhosting services",
+		"slug": "cozy-addons/template-28",
+		"category": ["business", "agency"],
+		"image": "template-28.png",
+		"isPremium": false
+	},
+	{
+		"label": "Restaurants & Cafes",
+		"slug": "cozy-addons/template-29",
+		"category": ["hotels-&-restaurants", "business"],
+		"image": "template-29.png",
+		"isPremium": true
+	},
+	{
+		"label": "Coffee Shop",
+		"slug": "cozy-addons/template-30",
+		"category": ["hotels-&-restaurants", "business"],
+		"image": "template-30.png",
+		"isPremium": false
+	},
+	{
+		"label": "Business Corporates",
+		"slug": "cozy-addons/template-31",
+		"category": ["agency", "business"],
+		"image": "template-31.png",
+		"isPremium": true
+	},
+	{
+		"label": "Photography",
+		"slug": "cozy-addons/template-32",
+		"category": ["photography"],
+		"image": "template-32.png",
+		"isPremium": false
+	},
+	{
+		"label": "Fitness & Gym",
+		"slug": "cozy-addons/template-33",
+		"category": ["business"],
+		"image": "template-33.png",
+		"isPremium": true
+	},
+	{
+		"label": "Law Firms & Lawyers",
+		"slug": "cozy-addons/template-34",
+		"category": ["business"],
+		"image": "template-34.png",
+		"isPremium": true
+	},
+	{
+		"label": "Dry Cleaning",
+		"slug": "cozy-addons/template-35",
+		"category": ["business"],
+		"image": "template-35.png",
+		"isPremium": true
+	},
+	{
+		"label": "Digital Agency",
+		"slug": "cozy-addons/template-36",
+		"category": ["agency"],
+		"image": "template-36.png",
+		"isPremium": true
+	},
+	{
+		"label": "Relyo",
+		"slug": "cozy-addons/template-37",
+		"category": ["agency"],
+		"image": "template-37.png",
+		"isPremium": true
+	},
+	{
+		"label": "Cirlce Photography",
+		"slug": "cozy-addons/template-38",
+		"category": ["photography"],
+		"image": "template-38.png",
+		"isPremium": true
+	},
+	{
+		"label": "Overload",
+		"slug": "cozy-addons/template-39",
+		"category": ["agency"],
+		"image": "template-39.png",
+		"isPremium": true
+	},
+	{
+		"label": "Xperio",
+		"slug": "cozy-addons/template-40",
+		"category": ["agency"],
+		"theme": "xperio",
+		"image": "template-40.png",
+		"isPremium": true
+	},
+	{
+		"label": "College",
+		"slug": "cozy-addons/template-41",
+		"category": ["education"],
+		"theme": "xperio",
+		"image": "template-41.png",
+		"isPremium": true
+	},
+	{
+		"label": "Home decor & furniture",
+		"slug": "cozy-addons/template-42",
+		"category": ["woocommerce"],
+		"image": "template-42.png",
+		"isPremium": true
+	},
+	{
+		"label": "Home decor & furniture",
+		"slug": "cozy-addons/template-43",
+		"category": ["woocommerce"],
+		"image": "template-43.png",
+		"isPremium": true
+	}
+]

@@ -1,0 +1,21 @@
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"26px","left":"26px","top":"80px","bottom":"120px"},"margin":{"top":"0","bottom":"0"}},"color":{"background":"#090909"},"background":{"backgroundImage":{"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/hero-32.png","id":1160,"source":"file","title":"hero-32"},"backgroundSize":"cover"}},"layout":{"type":"constrained","contentSize":"1024px"}} -->
+<div class="wp-block-group has-background" style="background-color:#090909;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:120px;padding-left:26px"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"80px","bottom":"80px"},"blockGap":"0"},"color":{"background":"#141313","text":"#adadad"},"border":{"radius":"24px"},"elements":{"link":{"color":{"text":"#adadad"}}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"784px"},"cozyCustomFont":"Inter","cozyAnimation":{"type":"fade-up","easingFunction":"ease","anchorPlacement":"top-center","duration":600}} -->
+<div class="wp-block-group has-text-color has-background has-link-color" style="border-radius:24px;color:#adadad;background-color:#141313;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"54px","lineHeight":"1.2","fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"text":"#fffffe"}},"cozyCustomFont":"Plus Jakarta Sans"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#fffffe;font-size:54px;font-style:normal;font-weight:600;line-height:1.2"><?php esc_html_e( 'Have an idea? Let’s make it happen together.', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"22px"}}}} -->
+<p class="has-text-align-center" style="margin-top:22px"><?php esc_html_e( '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"26px","bottom":"0"},"blockGap":{"top":"16px","left":"16px"}},"typography":{"fontSize":"15px","fontStyle":"normal","fontWeight":"500"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:26px;margin-bottom:0;font-size:15px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"background":"#7768ff","text":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}},"border":{"radius":"100px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" href="#" style="border-radius:100px;color:#fffffe;background-color:#7768ff;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'Join for Free', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"background":"#14131300","text":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"15px","bottom":"15px"}},"border":{"radius":"100px","color":"#fffffe","style":"solid","width":"1px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color wp-element-button" href="#" style="border-color:#fffffe;border-style:solid;border-width:1px;border-radius:100px;color:#fffffe;background-color:#14131300;padding-top:15px;padding-right:36px;padding-bottom:15px;padding-left:36px"><?php esc_html_e( 'Request Demo', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

@@ -1,0 +1,89 @@
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"80px","bottom":"80px","left":"0px","right":"0px"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"color":{"text":"#6a6a6a","background":"#fffffe"},"elements":{"link":{"color":{"text":"#6a6a6a"}}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"100%"},"cozyCustomFont":"Inter"} -->
+<div class="wp-block-group has-text-color has-background has-link-color" style="color:#6a6a6a;background-color:#fffffe;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:0px;padding-bottom:80px;padding-left:0px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:group {"style":{"spacing":{"padding":{"right":"26px","left":"26px","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"1180px"}} -->
+<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:26px;padding-bottom:0;padding-left:26px"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"margin":{"bottom":"64px"},"blockGap":{"top":"26px","left":"12px"}}}} -->
+<div class="wp-block-columns" style="margin-bottom:64px"><!-- wp:column {"style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column"><!-- wp:heading {"textAlign":"left","style":{"elements":{"link":{"color":{"text":"#010101"}}},"typography":{"fontStyle":"normal","fontWeight":"600","lineHeight":"1.2","fontSize":"48px","textTransform":"uppercase"},"color":{"text":"#010101"}},"cozyCustomFont":"Wix Madefor Display"} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#010101;font-size:48px;font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase"><?php esc_html_e( 'My Latest Works', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"12px"}}}} -->
+<p style="margin-top:12px"><?php esc_html_e( '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:buttons {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"0px"}}},"layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:0px;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"type":"cozy-block-btn","style":{"color":{"background":"#21ff0d","text":"#010101"},"elements":{"link":{"color":{"text":"#010101"}}},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}}},"icon":{"enabled":true,"path":"M1.75 15L0 13.25L9.25 3.9375L14.25 8.9375L20.75 2.5H17.5V0H25V7.5H22.5V4.25L14.25 12.5L9.25 7.5L1.75 15Z","viewBox":{"vx":"0","vy":"0","vw":"25","vh":"15"},"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"top":"0px","bottom":"0px"},"boxWidth":"16px","boxHeight":"16px","size":"16px","rotate":0,"gap":"8px","position":"before","border":{"width":"","style":"","color":""},"radius":"","color":{"text":"#010101","textHover":"#fffffe","bg":"","bgHover":"","borderHover":""}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#2f2f2f00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="color:#010101;background-color:#21ff0d;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'View All Portfolio', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:cozy-block/portfolio-gallery {"blockClientId":"bd28bba6-1d46-4c5c-be57-54781bdf7516","layout":"carousel","layoutType":"default","sliderOptions":{"direction":"horizontal","height":"430px","loop":false,"autoplay":{"status":true,"pauseOnMouseEnter":true,"reverseDirection":false,"delay":2500},"centeredSlides":false,"slidesPerView":2.1,"spaceBetween":20,"speed":1500},"pagination":{"enabled":false,"default":{"width":"10px","height":"10px","radius":"10px","color":"#6a6a6a","colorHover":""},"active":{"width":"10px","height":"10px","radius":"10px","border":{"width":"","style":"","color":""},"offset":"1px","color":"#f90","colorHover":""},"align":"center","verticalPosition":0,"left":"0px","right":"0px","gap":"4px"},"navigation":{"enabled":false,"hoverShow":true,"size":"15px","boxWidth":"35px","boxHeight":"35px","border":{"width":"","style":"","color":""},"radius":"100px","borderColorHover":"","bgColor":"#007cba","bgColorHover":"#f90","color":"#fff","colorHover":""}} -->
+<!-- wp:cozy-block/carousel -->
+<div class="cozy-block-carousel swiper-slide"><!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/portfolio-45.png","isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.25},"minHeight":400,"customGradient":"linear-gradient(184deg,rgba(0,0,0,0) 44%,rgb(1,1,1) 100%)","contentPosition":"bottom center","className":"ca-pattern__show-bg-hover","style":{"spacing":{"padding":{"top":"26px","bottom":"26px","left":"26px","right":"26px"}},"border":{"radius":"12px"}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-center ca-pattern__show-bg-hover" style="border-radius:12px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;min-height:400px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/portfolio-45.png" style="object-position:50% 25%" data-object-fit="cover" data-object-position="50% 25%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(184deg,rgba(0,0,0,0) 44%,rgb(1,1,1) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"className":"ca-pattern__fade-up","style":{"color":{"text":"#000a1d"},"elements":{"link":{"color":{"text":"#000a1d"}}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group ca-pattern__fade-up has-text-color has-link-color" style="color:#000a1d"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"spacing":{"margin":{"top":"0px","bottom":"0px"}},"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#fffffe"}},"cozyCustomFont":"Wix Madefor Display"} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#fffffe;margin-top:0px;margin-bottom:0px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><?php esc_html_e( 'Web App Development', 'cozy-addons' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"14px","fontStyle":"normal","fontWeight":"500"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:14px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"color":{"text":"#010101","background":"#21ff0d"},"elements":{"link":{"color":{"text":"#010101"}}},"spacing":{"padding":{"left":"26px","right":"26px","top":"12px","bottom":"12px"}}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#23232300"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="color:#010101;background-color:#21ff0d;padding-top:12px;padding-right:26px;padding-bottom:12px;padding-left:26px"><?php esc_html_e( 'View More', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:cozy-block/carousel -->
+
+<!-- wp:cozy-block/carousel -->
+<div class="cozy-block-carousel swiper-slide"><!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/portfolio-30.png","isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.25},"minHeight":400,"customGradient":"linear-gradient(184deg,rgba(0,0,0,0) 44%,rgb(1,1,1) 100%)","contentPosition":"bottom center","className":"ca-pattern__show-bg-hover","style":{"spacing":{"padding":{"top":"26px","bottom":"26px","left":"26px","right":"26px"}},"border":{"radius":"12px"}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-center ca-pattern__show-bg-hover" style="border-radius:12px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;min-height:400px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/portfolio-30.png" style="object-position:50% 25%" data-object-fit="cover" data-object-position="50% 25%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(184deg,rgba(0,0,0,0) 44%,rgb(1,1,1) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"className":"ca-pattern__fade-up","style":{"color":{"text":"#000a1d"},"elements":{"link":{"color":{"text":"#000a1d"}}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group ca-pattern__fade-up has-text-color has-link-color" style="color:#000a1d"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"spacing":{"margin":{"top":"0px","bottom":"0px"}},"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#fffffe"}},"cozyCustomFont":"Wix Madefor Display"} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#fffffe;margin-top:0px;margin-bottom:0px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><?php esc_html_e( 'Web App Development', 'cozy-addons' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"14px","fontStyle":"normal","fontWeight":"500"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:14px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"color":{"text":"#010101","background":"#21ff0d"},"elements":{"link":{"color":{"text":"#010101"}}},"spacing":{"padding":{"left":"26px","right":"26px","top":"12px","bottom":"12px"}}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#23232300"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="color:#010101;background-color:#21ff0d;padding-top:12px;padding-right:26px;padding-bottom:12px;padding-left:26px"><?php esc_html_e( 'View More', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:cozy-block/carousel -->
+
+<!-- wp:cozy-block/carousel -->
+<div class="cozy-block-carousel swiper-slide"><!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/portfolio-31.png","isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.25},"minHeight":400,"customGradient":"linear-gradient(184deg,rgba(0,0,0,0) 44%,rgb(1,1,1) 100%)","contentPosition":"bottom center","className":"ca-pattern__show-bg-hover","style":{"spacing":{"padding":{"top":"26px","bottom":"26px","left":"26px","right":"26px"}},"border":{"radius":"12px"}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-center ca-pattern__show-bg-hover" style="border-radius:12px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;min-height:400px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/portfolio-31.png" style="object-position:50% 25%" data-object-fit="cover" data-object-position="50% 25%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(184deg,rgba(0,0,0,0) 44%,rgb(1,1,1) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"className":"ca-pattern__fade-up","style":{"color":{"text":"#000a1d"},"elements":{"link":{"color":{"text":"#000a1d"}}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group ca-pattern__fade-up has-text-color has-link-color" style="color:#000a1d"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"spacing":{"margin":{"top":"0px","bottom":"0px"}},"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#fffffe"}},"cozyCustomFont":"Wix Madefor Display"} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#fffffe;margin-top:0px;margin-bottom:0px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><?php esc_html_e( 'Web App Development', 'cozy-addons' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"14px","fontStyle":"normal","fontWeight":"500"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:14px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"color":{"text":"#010101","background":"#21ff0d"},"elements":{"link":{"color":{"text":"#010101"}}},"spacing":{"padding":{"left":"26px","right":"26px","top":"12px","bottom":"12px"}}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#23232300"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="color:#010101;background-color:#21ff0d;padding-top:12px;padding-right:26px;padding-bottom:12px;padding-left:26px"><?php esc_html_e( 'View More', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:cozy-block/carousel -->
+
+<!-- wp:cozy-block/carousel -->
+<div class="cozy-block-carousel swiper-slide"><!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/portfolio-33.png","isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0.25},"minHeight":400,"customGradient":"linear-gradient(184deg,rgba(0,0,0,0) 44%,rgb(1,1,1) 100%)","contentPosition":"bottom center","className":"ca-pattern__show-bg-hover","style":{"spacing":{"padding":{"top":"26px","bottom":"26px","left":"26px","right":"26px"}},"border":{"radius":"12px"}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-center ca-pattern__show-bg-hover" style="border-radius:12px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px;min-height:400px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/portfolio-33.png" style="object-position:50% 25%" data-object-fit="cover" data-object-position="50% 25%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(184deg,rgba(0,0,0,0) 44%,rgb(1,1,1) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"className":"ca-pattern__fade-up","style":{"color":{"text":"#000a1d"},"elements":{"link":{"color":{"text":"#000a1d"}}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group ca-pattern__fade-up has-text-color has-link-color" style="color:#000a1d"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"spacing":{"margin":{"top":"0px","bottom":"0px"}},"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#fffffe"}},"cozyCustomFont":"Wix Madefor Display"} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#fffffe;margin-top:0px;margin-bottom:0px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><?php esc_html_e( 'Web App Development', 'cozy-addons' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"14px","fontStyle":"normal","fontWeight":"500"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:14px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"color":{"text":"#010101","background":"#21ff0d"},"elements":{"link":{"color":{"text":"#010101"}}},"spacing":{"padding":{"left":"26px","right":"26px","top":"12px","bottom":"12px"}}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#23232300"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="color:#010101;background-color:#21ff0d;padding-top:12px;padding-right:26px;padding-bottom:12px;padding-left:26px"><?php esc_html_e( 'View More', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:cozy-block/carousel -->
+<!-- /wp:cozy-block/portfolio-gallery --></div>
+<!-- /wp:group -->

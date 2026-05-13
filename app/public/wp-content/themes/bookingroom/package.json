@@ -1,0 +1,10 @@
+{
+  "name": "bookingroom",
+  "version": "1.0.0",
+  "devDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "scripts": {
+    "build:css": "npx tailwindcss -c tailwind.config.js -i ./style.css -o ./style.css --minify"
+  }
+}

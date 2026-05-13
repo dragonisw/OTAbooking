@@ -1,0 +1,43 @@
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"color":{"background":"#073d44"}},"layout":{"type":"constrained","contentSize":"100%"},"cozyHoverEffect":{"hasOverflow":true,"overflow":"hidden","hasZIndex":false,"zIndex":0,"boxShadow":{"enabled":false,"color":"#000","horizontal":0,"vertical":0,"blur":10,"spread":0,"position":""},"boxShadowHover":{"enabled":false,"color":"#000","horizontal":0,"vertical":0,"blur":10,"spread":0,"position":""},"transformEnabled":false,"transform":{"translateX":0,"translateY":0,"rotate":0,"scale":1},"transformDefaultEnabled":false,"transformDefault":{"translateX":0,"translateY":0,"rotate":0,"scale":1}}} -->
+<div class="wp-block-group has-background" style="background-color:#073d44;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cozy-block/container {"blockClientId":"09b3cf66-8653-4142-b92e-83b6f2b115a8","shapeDivider":{"enabled":true,"margin":{"top":0,"right":0,"bottom":0,"left":0},"height":600,"position":"bottom","flip":"right","svg":"\u003csvg viewBox=\u00220 0 519 134\u0022 fill=\u0022none\u0022 xmlns=\u0022http://www.w3.org/2000/svg\u0022 preserveAspectRatio=\u0022none\u0022\u003e\n\t\t\t\u003cpath d=\u0022M0 134H519V0L0 134Z\u0022 width=\u0022519\u0022/\u003e\n\t\t  \t\u003c/svg\u003e","color":"#08525b"}} -->
+<div class="wp-block-cozy-block-container"><div class="cozy-block-container visibility-none border-none hover-border-none
+		shape-divider-position-bottom shape-divider-flip-right 
+	" id="cozyBlock_09b3cf66_8653_4142_b92e_83b6f2b115a8"><div style="position:relative;z-index:10"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"120px","bottom":"0px"},"blockGap":"0"},"color":{"text":"#d9d9d9"},"elements":{"link":{"color":{"text":"#d9d9d9"}}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"1180px"},"cozyCustomFont":"Public Sans"} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#d9d9d9;margin-top:0;margin-bottom:0;padding-top:120px;padding-right:26px;padding-bottom:0px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"44px","left":"36px"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":"","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"600px","justifyContent":"left"},"cozyAnimation":{"type":"fade-up","easingFunction":"ease","anchorPlacement":"top-bottom","duration":600}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:buttons {"style":{"typography":{"fontSize":"14px","fontStyle":"normal","fontWeight":"400","textTransform":"uppercase"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:0;margin-bottom:0;font-size:14px;font-style:normal;font-weight:400;text-transform:uppercase"><!-- wp:button {"style":{"spacing":{"padding":{"left":"18px","right":"18px","top":"5px","bottom":"5px"}},"color":{"background":"#10e3bc26","text":"#10e3bc"},"elements":{"link":{"color":{"text":"#10e3bc"}}}},"cozyHoverStyles":{"bgColor":"#10e3bc26","color":"#10e3bc","borderColor":""}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" style="color:#10e3bc;background-color:#10e3bc26;padding-top:5px;padding-right:18px;padding-bottom:5px;padding-left:18px"><?php esc_html_e( 'Business with Bazario!', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"textAlign":"left","style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"typography":{"fontSize":"54px","fontStyle":"normal","fontWeight":"600","textTransform":"none","lineHeight":"1.2"},"spacing":{"margin":{"top":"8px","bottom":"16px"}},"color":{"text":"#fffffe"}},"cozyCustomFont":"Noto Serif TC"} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#fffffe;margin-top:8px;margin-bottom:16px;font-size:54px;font-style:normal;font-weight:600;line-height:1.2;text-transform:none"><?php esc_html_e( 'Powering Success for Top Companies.', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><?php esc_html_e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"36px","bottom":"0"},"blockGap":{"top":"16px","left":"16px"}}},"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:36px;margin-bottom:0;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"type":"cozy-block-btn","style":{"elements":{"link":{"color":{"text":"#073d44"}}},"color":{"background":"#10e3bc","text":"#073d44"},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}},"border":{"radius":"5px"}},"icon":{"enabled":true,"path":"M10.8737 12.7121C10.9908 12.595 10.9908 12.405 10.8737 12.2879L1.00502 2.41924C0.887867 2.30208 0.887867 2.11213 1.00502 1.99497L1.99497 1.00502C2.11213 0.887867 2.30208 0.887867 2.41924 1.00502L13.7021 12.2879C13.8192 12.405 13.8192 12.595 13.7021 12.7121L2.41924 23.995C2.30208 24.1121 2.11213 24.1121 1.99497 23.995L1.00502 23.005C0.887867 22.8879 0.887868 22.6979 1.00503 22.5808L10.8737 12.7121Z","viewBox":{"vx":"0","vy":"0","vw":"14","vh":"25"},"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"margin":{"top":"-2px","bottom":"0px"},"boxWidth":"16px","boxHeight":"16px","size":"16px","rotate":0,"gap":"6px","position":"after","border":{"width":"","style":"","color":""},"radius":"","color":{"text":"#073d44","textHover":"#fffffe","bg":"","bgHover":"","borderHover":""}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" href="#" style="border-radius:5px;color:#073d44;background-color:#10e3bc;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'Start Building', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#10e3bc"}}},"color":{"background":"#10e3bc26","text":"#10e3bc"},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}},"border":{"radius":"5px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" href="#" style="border-radius:5px;color:#10e3bc;background-color:#10e3bc26;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'Request Demo', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"top","width":"40%","style":{"spacing":{"blockGap":"0"}},"cozyAnimation":{"type":"flip-left","easingFunction":"ease","anchorPlacement":"top-bottom","duration":800}} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"large","align":"center","style":{"border":{"top":{"color":"#0595a7","width":"5px"},"right":{"color":"#0595a7","width":"5px"},"bottom":{"width":"0px","style":"none"},"left":{"color":"#0595a7","width":"5px"}}}} -->
+<figure class="wp-block-image aligncenter size-large has-custom-border"><img src="https://plugins.cozythemes.com/cozy-addons/assets/media/hero-26.png" alt="" style="border-top-color:#0595a7;border-top-width:5px;border-right-color:#0595a7;border-right-width:5px;border-bottom-style:none;border-bottom-width:0px;border-left-color:#0595a7;border-left-width:5px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div><div class="cozy-shape-divider-wrapper"><svg viewBox="0 0 519 134" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+			<path d="M0 134H519V0L0 134Z" width="519"/>
+				</svg></div></div></div>
+<!-- /wp:cozy-block/container --></div>
+<!-- /wp:group -->

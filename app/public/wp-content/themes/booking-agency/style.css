@@ -1,0 +1,14 @@
+/*
+Theme Name: Booking Agency
+Theme URI: http://example.com/booking-agency
+Author: Your Name
+Author URI: http://example.com
+Description: Booking Agency theme with Tailwind CSS
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: patterns-agency
+Text Domain: booking-agency
+Tags: tailwindcss, agency, booking
+*/
+@import "https://cdn.tailwindcss.com";

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kéo thả phòng</title>
+    <style>
+        .drag-container { display: flex; gap: 40px; margin-top: 40px; }
+        .room-list, .drop-area { border: 2px dashed #aaa; padding: 20px; min-width: 200px; min-height: 200px; }
+        .room-item { background: #f0f0f0; margin: 10px 0; padding: 10px; cursor: grab; }
+        .drop-area.active { border-color: #0073aa; background: #e6f7ff; }
+    </style>
+</head>
+<body>
+    <h2>Kéo thả phòng vào khu vực đặt phòng</h2>
+    <div class="drag-container">
+        <div class="room-list">
+            <div class="room-item" draggable="true">Phòng Deluxe</div>
+            <div class="room-item" draggable="true">Phòng Suite</div>
+            <div class="room-item" draggable="true">Phòng Standard</div>
+        </div>
+        <div class="drop-area" id="dropArea">Kéo phòng vào đây để đặt</div>
+    </div>
+    <script>
+        const items = document.querySelectorAll('.room-item');
+        const dropArea = document.getElementById('dropArea');
+        items.forEach(item => {
+            item.addEventListener('dragstart', e => {
+                e.dataTransfer.setData('text/plain', item.textContent);
+            });
+        });
+        dropArea.addEventListener('dragover', e => {
+            e.preventDefault();
+            dropArea.classList.add('active');
+        });
+        dropArea.addEventListener('dragleave', () => {
+            dropArea.classList.remove('active');
+        });
+        dropArea.addEventListener('drop', e => {
+            e.preventDefault();
+            dropArea.classList.remove('active');
+            const room = e.dataTransfer.getData('text/plain');
+            dropArea.innerHTML = `<strong>Đã chọn:</strong> ${room}`;
+        });
+    </script>
+</body>
+</html>

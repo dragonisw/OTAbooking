@@ -1,0 +1,50 @@
+[
+	{
+		"label": "About Us",
+		"slug": "cozy-addons/about-us-1",
+		"category": ["about-us"],
+		"image": "about-us-1.png",
+		"theme": "relyo",
+		"isPremium": true
+	},
+	{
+		"label": "Services",
+		"slug": "cozy-addons/service-1",
+		"category": ["services"],
+		"image": "service-1.png",
+		"theme": "relyo",
+		"isPremium": true
+	},
+	{
+		"label": "Contact Us",
+		"slug": "cozy-addons/contact-us-1",
+		"category": ["contact-us"],
+		"image": "contact-us-1.png",
+		"theme": "relyo",
+		"isPremium": true
+	},
+	{
+		"label": "Portfolio",
+		"slug": "cozy-addons/portfolio-1",
+		"category": ["portfolio"],
+		"image": "portfolio-1.png",
+		"theme": "relyo",
+		"isPremium": true
+	},
+	{
+		"label": "Blogs",
+		"slug": "cozy-addons/blog-1",
+		"category": ["blogs"],
+		"image": "blog-1.png",
+		"theme": "relyo",
+		"isPremium": true
+	},
+	{
+		"label": "Single Post",
+		"slug": "cozy-addons/single-post-1",
+		"category": ["blogs"],
+		"image": "single-post-1.png",
+		"theme": "relyo",
+		"isPremium": true
+	}
+]

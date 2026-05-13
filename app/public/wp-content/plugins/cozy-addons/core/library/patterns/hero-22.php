@@ -1,0 +1,93 @@
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"typography":{"fontSize":"16px","lineHeight":"1.6","fontStyle":"normal","fontWeight":"400"},"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"text":"#fffffe","background":"#666666"}},"layout":{"type":"constrained","contentSize":"100%"},"cozyCustomFont":"Inter"} -->
+<div class="wp-block-group has-text-color has-background has-link-color" style="color:#fffffe;background-color:#666666;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:cozy-block/container {"blockClientId":"d73718f9-405c-4a2c-99f9-dbd640321994","position":"fixed","stickyStyles":{"bgColor":"#12111199"},"zIndex":"9999"} -->
+<div class="wp-block-cozy-block-container"><div class="cozy-block-container visibility-none border-none hover-border-none
+		fixed-placement-top
+	" id="cozyBlock_d73718f9_405c_4a2c_99f9_dbd640321994"><div class="wp-block-cozy-block-container" style="position:relative;z-index:10"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"26px","bottom":"26px"},"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"1180px"}} -->
+<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px"><!-- wp:group {"style":{"spacing":{"blockGap":"26px","padding":{"right":"0","left":"0","top":"0px","bottom":"0px"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0px;padding-right:0;padding-bottom:0px;padding-left:0"><!-- wp:group {"style":{"spacing":{"blockGap":"16px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:site-logo {"style":{"layout":{"selfStretch":"fixed","flexSize":"65px"}}} /-->
+
+<!-- wp:site-title {"style":{"typography":{"fontSize":"24px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"text":"#fffffe"}}} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"26px"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:navigation {"className":"ca-pattern__navigation","style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:home-link /-->
+
+<!-- wp:navigation-link {"label":"About Us","url":"#","kind":"custom","className":""} /-->
+
+<!-- wp:navigation-link {"label":"Features","url":"#","kind":"custom","className":""} /-->
+
+<!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","className":""} /-->
+
+<!-- wp:navigation-link {"label":"Pricing","url":"#","kind":"custom","className":""} /-->
+<!-- /wp:navigation -->
+
+<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonPosition":"button-only","buttonUseIcon":true,"isSearchFieldHidden":true,"className":"ca-pattern__core-icon","style":{"color":{"background":"#cacaca00","text":"#fffffe"},"elements":{"link":{"color":{"text":"#fffffe"}}}}} /-->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"0px","bottom":"0"}}},"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:0px;margin-bottom:0;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"background":"#06bf9a00","text":"#fffffe"},"spacing":{"padding":{"left":"32px","right":"32px","top":"16px","bottom":"16px"}},"border":{"radius":"0px","color":"#fffffe","width":"1px","style":"solid"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color wp-element-button" href="#" style="border-color:#fffffe;border-style:solid;border-width:1px;border-radius:0px;color:#fffffe;background-color:#06bf9a00;padding-top:16px;padding-right:32px;padding-bottom:16px;padding-left:32px"><?php esc_html_e( 'Reservation', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div></div></div>
+<!-- /wp:cozy-block/container -->
+
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="margin-top:0"><!-- wp:cozy-block/slider {"blockClientId":"544ef03d-5e43-4729-8184-9be4fa708c94","pagination":{"width":"10px","height":"10px","borderRadius":"100px","activeWidth":"10px","activeHeight":"10px","activeBorder":{"width":"","style":"","color":""},"activeOffset":"4px","activeBorderRadius":"100px","bottom":12,"left":0,"right":0,"align":"center","gap":"4px","activeColor":"#fffffe","color":"#fff","colorHover":"#117165","activeBorderHover":"","dynamicBullets":false},"navigation":{"iconSize":16,"iconRotate":0,"iconBoxWidth":44,"iconBoxHeight":44,"borderRadius":3,"borderType":"none","borderWidth":1,"borderColor":"#000","borderColorHover":"","backgroundColor":"#fffffe","color":"#117165","backgroundColorHover":"#ff9900","colorHover":"#fff","padding":{"top":5,"right":5,"bottom":5,"left":5,"responsive":"desktop"},"arrowIconNext":"\u003csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='0' class='svg-inline\u002d\u002dfa fa-0 ' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'\u003e\u003cpath fill='currentColor' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'\u003e\u003c/path\u003e\u003c/svg\u003e","arrowIconPrev":"\u003csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-left' class='svg-inline\u002d\u002dfa fa-angle-left ' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'\u003e\u003cpath fill='currentColor' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'\u003e\u003c/path\u003e\u003c/svg\u003e"},"sliderOptions":{"loop":false,"autoplay":{"status":true,"pauseOnMouseEnter":true,"delay":2500},"slidesPerView":1,"centeredSlides":false,"spaceBetween":16,"speed":1500,"effect":"none"},"thumbMedia":["",""]} -->
+<div class="wp-block-cozy-block-slider"><div class="cozy-block-slider swiper-container hover-show " id="cozyBlock_544ef03d_5e43_4729_8184_9be4fa708c94"><div class="swiper-wrapper"><!-- wp:cozy-block/slide {"blockClientId":"d6f94789-331e-4b6b-9074-d75c2e8140fa"} -->
+<!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/hero-27.png","isUserOverlayColor":true,"minHeight":950,"customGradient":"linear-gradient(135deg,rgba(31,19,6,0.26) 0%,rgba(0,0,0,0.59) 100%)","contentPosition":"center center","className":"ca-pattern__responsive-cover","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-cover ca-pattern__responsive-cover" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:950px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/hero-27.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(135deg,rgba(31,19,6,0.26) 0%,rgba(0,0,0,0.59) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"right":"26px","left":"26px","top":"280px","bottom":"80px"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"color":{"text":"#f8f8f8"},"elements":{"link":{"color":{"text":"#f8f8f8"}}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"1180px"},"cozyCustomFont":"Inter","cozyAnimation":{"type":"fade-up","easingFunction":"ease","anchorPlacement":"top-bottom","duration":800}} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#f8f8f8;margin-top:0;margin-bottom:0;padding-top:280px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"color":{"text":"#f8f8f8"},"elements":{"link":{"color":{"text":"#f8f8f8"}}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"808px","justifyContent":"center"},"cozyCustomFont":"Be Vietnam Pro","cozyAnimation":{"type":"fade-up","easingFunction":"ease","anchorPlacement":"top-bottom","duration":800}} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#f8f8f8;margin-top:0;margin-bottom:0;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"64px","lineHeight":"1.2","fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"text":"#fffffe"}},"cozyCustomFont":"Playfair Display"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#fffffe;font-size:64px;font-style:normal;font-weight:600;line-height:1.2"><?php esc_html_e( 'Step Into Your Dream Haven Destination!', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"22px","bottom":"36px"}}}} -->
+<p class="has-text-align-center" style="margin-top:22px;margin-bottom:36px"><?php esc_html_e( 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"0px","bottom":"0"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:0px;margin-bottom:0;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#117165"}}},"color":{"text":"#117165","background":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}},"border":{"radius":"0px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" href="#" style="border-radius:0px;color:#117165;background-color:#fffffe;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'Get in Touch', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"background":"#96340e00","text":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"15px","bottom":"15px"}},"border":{"radius":"0px","color":"#fffffe","style":"solid","width":"1px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color wp-element-button" href="#" style="border-color:#fffffe;border-style:solid;border-width:1px;border-radius:0px;color:#fffffe;background-color:#96340e00;padding-top:15px;padding-right:36px;padding-bottom:15px;padding-left:36px"><?php esc_html_e( 'Reserve Now', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+<!-- /wp:cozy-block/slide -->
+
+<!-- wp:cozy-block/slide {"blockClientId":"d46f9102-91ae-421f-8961-17886497d5dc"} -->
+<!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/hero-27.png","isUserOverlayColor":true,"minHeight":950,"customGradient":"linear-gradient(135deg,rgba(31,19,6,0.26) 0%,rgba(0,0,0,0.59) 100%)","contentPosition":"center center","className":"ca-pattern__responsive-cover","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-cover ca-pattern__responsive-cover" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:950px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/hero-27.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background:linear-gradient(135deg,rgba(31,19,6,0.26) 0%,rgba(0,0,0,0.59) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"right":"26px","left":"26px","top":"280px","bottom":"80px"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"color":{"text":"#f8f8f8"},"elements":{"link":{"color":{"text":"#f8f8f8"}}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"1180px"},"cozyCustomFont":"Inter","cozyAnimation":{"type":"fade-up","easingFunction":"ease","anchorPlacement":"top-bottom","duration":800}} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#f8f8f8;margin-top:0;margin-bottom:0;padding-top:280px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"color":{"text":"#f8f8f8"},"elements":{"link":{"color":{"text":"#f8f8f8"}}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"}},"layout":{"type":"constrained","contentSize":"808px","justifyContent":"center"},"cozyCustomFont":"Be Vietnam Pro","cozyAnimation":{"type":"fade-up","easingFunction":"ease","anchorPlacement":"top-bottom","duration":800}} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#f8f8f8;margin-top:0;margin-bottom:0;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"64px","lineHeight":"1.2","fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"text":"#fffffe"}},"cozyCustomFont":"Playfair Display"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#fffffe;font-size:64px;font-style:normal;font-weight:600;line-height:1.2"><?php esc_html_e( 'Step Into Your Dream Haven Destination!', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"22px","bottom":"36px"}}}} -->
+<p class="has-text-align-center" style="margin-top:22px;margin-bottom:36px"><?php esc_html_e( 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"0px","bottom":"0"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:0px;margin-bottom:0;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#117165"}}},"color":{"text":"#117165","background":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}},"border":{"radius":"0px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" href="#" style="border-radius:0px;color:#117165;background-color:#fffffe;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'Get in Touch', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"background":"#96340e00","text":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"15px","bottom":"15px"}},"border":{"radius":"0px","color":"#fffffe","style":"solid","width":"1px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color wp-element-button" href="#" style="border-color:#fffffe;border-style:solid;border-width:1px;border-radius:0px;color:#fffffe;background-color:#96340e00;padding-top:15px;padding-right:36px;padding-bottom:15px;padding-left:36px"><?php esc_html_e( 'Reserve Now', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+<!-- /wp:cozy-block/slide --></div><div class="swiper-button-prev cozy-block-button-prev"></div><div class="swiper-button-next cozy-block-button-next"></div><div class="swiper-pagination cozy-pagination"></div></div></div>
+<!-- /wp:cozy-block/slider --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

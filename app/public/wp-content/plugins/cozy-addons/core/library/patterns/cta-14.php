@@ -1,0 +1,21 @@
+<!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/cta-9.png","dimRatio":70,"customOverlayColor":"#211915","isUserOverlayColor":true,"minHeight":500,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"cozyAnimation":{"type":"fade-up","easingFunction":"ease","anchorPlacement":"top-bottom","duration":600}} -->
+<div class="wp-block-cover" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:500px"><img class="wp-block-cover__image-background" alt="" src="https://plugins.cozythemes.com/cozy-addons/assets/media/cta-9.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-70 has-background-dim" style="background-color:#211915"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"0","bottom":"0"}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"},"color":{"text":"#f8f8f8"},"elements":{"link":{"color":{"text":"#f8f8f8"}}}},"layout":{"type":"constrained","contentSize":"682px"},"cozyCustomFont":"Inter"} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#f8f8f8;margin-top:0;margin-bottom:0;padding-top:0;padding-right:26px;padding-bottom:0;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"text":"#fffffe"},"typography":{"fontSize":"48px","lineHeight":"1.2","fontStyle":"normal","fontWeight":"600"}},"cozyCustomFont":"Inter"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#fffffe;font-size:48px;font-style:normal;font-weight:600;line-height:1.2"><?php esc_html_e( 'Ready to Make Your Mark Online?', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"16px","bottom":"26px"}}}} -->
+<p class="has-text-align-center" style="margin-top:16px;margin-bottom:26px"><?php esc_html_e( 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"},"spacing":{"margin":{"top":"0px","bottom":"0"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:0px;margin-bottom:0;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"background":"#97340d","text":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"16px","bottom":"16px"}},"border":{"radius":"100px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color wp-element-button" href="#" style="border-radius:100px;color:#fffffe;background-color:#97340d;padding-top:16px;padding-right:36px;padding-bottom:16px;padding-left:36px"><?php esc_html_e( 'Shop Now', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"style":{"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"background":"#96340e00","text":"#fffffe"},"spacing":{"padding":{"left":"36px","right":"36px","top":"15px","bottom":"15px"}},"border":{"radius":"100px","color":"#fffffe","style":"solid","width":"1px"}},"cozyHoverStyles":{"bgColor":"#ff9900","color":"#fffffe","borderColor":"#bebebe00"}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background has-link-color has-border-color wp-element-button" href="#" style="border-color:#fffffe;border-style:solid;border-width:1px;border-radius:100px;color:#fffffe;background-color:#96340e00;padding-top:15px;padding-right:36px;padding-bottom:15px;padding-left:36px"><?php esc_html_e( 'Contact Us', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->

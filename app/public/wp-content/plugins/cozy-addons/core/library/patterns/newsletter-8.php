@@ -1,0 +1,15 @@
+<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"right":"26px","left":"26px","top":"80px","bottom":"80px"}},"typography":{"fontSize":"16px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"},"color":{"text":"#6a6a6a","background":"#f8f8f8"},"elements":{"link":{"color":{"text":"#6a6a6a"}}}},"layout":{"type":"constrained","contentSize":"588px"},"cozyHoverEffect":{"hasOverflow":true,"overflow":"hidden","hasZIndex":false,"zIndex":0,"boxShadow":{"enabled":false,"color":"#000","horizontal":0,"vertical":0,"blur":10,"spread":0,"position":""},"boxShadowHover":{"enabled":false,"color":"#000","horizontal":0,"vertical":0,"blur":10,"spread":0,"position":""},"transformEnabled":false,"transform":{"translateX":0,"translateY":0,"rotate":0,"scale":1},"transformDefaultEnabled":false,"transformDefault":{"translateX":0,"translateY":0,"rotate":0,"scale":1}},"cozyCustomFont":"Inter"} -->
+<div class="wp-block-group has-text-color has-background has-link-color" style="color:#6a6a6a;background-color:#f8f8f8;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:16px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"36px","lineHeight":"1.2","fontStyle":"normal","fontWeight":"300"},"color":{"text":"#0e0e0e"},"elements":{"link":{"color":{"text":"#0e0e0e"}}}},"cozyCustomFont":"Plus Jakarta Sans"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#0e0e0e;font-size:36px;font-style:normal;font-weight:300;line-height:1.2"><strong><?php esc_html_e( 'Special Deal!', 'cozy-addons' ); ?> </strong><?php esc_html_e( 'Subscribe now and get 10% off your first buy.', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"16px","bottom":"0px"}}}} -->
+<p class="has-text-align-center" style="margin-top:16px;margin-bottom:0px"><?php esc_html_e( 'Recommended snippet for Contact Form 7 \'[email* your-email placeholder"Enter your email"] [submit "Sign Up"]\'', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"26px","bottom":"0px"},"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"782px"}} -->
+<div class="wp-block-group" style="margin-top:26px;margin-bottom:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:contact-form-7/contact-form-selector {"id":1418,"hash":"bd05bfa","title":"Newsletter","className":"ca-newsletter-form ca-pattern__newsletter-8"} -->
+<div class="wp-block-contact-form-7-contact-form-selector ca-newsletter-form ca-pattern__newsletter-8">[contact-form-7 id="bd05bfa" title="Newsletter"]</div>
+<!-- /wp:contact-form-7/contact-form-selector --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

@@ -1,0 +1,65 @@
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"80px","bottom":"80px","left":"26px","right":"26px"},"blockGap":"0"},"color":{"background":"#fffffe"},"border":{"bottom":{"color":"#dfe5eb","style":"solid","width":"1px"}}},"layout":{"type":"constrained","contentSize":"1180px"}} -->
+<div class="wp-block-group has-background" style="border-bottom-color:#dfe5eb;border-bottom-style:solid;border-bottom-width:1px;background-color:#fffffe;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:80px;padding-left:26px"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"top":"44px"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top","width":"","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"175px","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"22px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"}},"cozyCustomFont":"Geist"} -->
+<h3 class="wp-block-heading" style="font-size:22px;font-style:normal;font-weight:600;line-height:1.3"><?php esc_html_e( 'Google', 'cozy-addons' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"color":{"text":"#e57125"},"elements":{"link":{"color":{"text":"#e57125"}}},"typography":{"fontSize":"24px"},"spacing":{"blockGap":"6px","margin":{"top":"8px","bottom":"8px"}}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"},"cozyCustomFont":"Public Sans"} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#e57125;margin-top:8px;margin-bottom:8px;font-size:24px"><!-- wp:heading -->
+<h2 class="wp-block-heading">5.0</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"scale":"contain","sizeSlug":"large","linkDestination":"none","className":"is-style-default","style":{"color":{"duotone":["rgb(229, 113, 37)","rgb(229, 113, 37)"]},"spacing":{"margin":{"bottom":"0","left":"0px","right":"0","top":"-5px"}},"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-image size-large is-style-default" style="margin-top:-5px;margin-right:0;margin-bottom:0;margin-left:0px"><img src="https://plugins.cozythemes.com/cozy-addons/assets/media/stars.png" alt="" style="object-fit:contain"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#8d8d8e"},"elements":{"link":{"color":{"text":"#8d8d8e"}}},"spacing":{"margin":{"top":"0","bottom":"0"}}},"cozyCustomFont":"Public Sans"} -->
+<p class="has-text-color has-link-color" style="color:#8d8d8e;margin-top:0;margin-bottom:0;font-size:14px"><?php esc_html_e( 'Google', 'cozy-addons' ); ?> <strong><mark style="background-color:rgba(0, 0, 0, 0);color:#020e14" class="has-inline-color"><?php esc_html_e( '10,887', 'cozy-addons' ); ?></mark> </strong><?php esc_html_e( 'reviews', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"top","width":"","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"210px","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"22px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"}},"cozyCustomFont":"Geist"} -->
+<h3 class="wp-block-heading" style="font-size:22px;font-style:normal;font-weight:600;line-height:1.3"><?php esc_html_e( 'Trustpilot', 'cozy-addons' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"scale":"contain","sizeSlug":"large","linkDestination":"none","className":"is-style-default","style":{"color":{"duotone":["rgb(0, 171, 118)","#fffffe"]},"spacing":{"margin":{"top":"8px","bottom":"8px","left":"0","right":"0"}},"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-image size-large is-style-default" style="margin-top:8px;margin-right:0;margin-bottom:8px;margin-left:0"><img src="https://plugins.cozythemes.com/cozy-addons/assets/media/stars_fill.png" alt="" style="object-fit:contain"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#8d8d8e"},"elements":{"link":{"color":{"text":"#8d8d8e"}}},"spacing":{"margin":{"top":"0","bottom":"0"}}},"cozyCustomFont":"Public Sans"} -->
+<p class="has-text-color has-link-color" style="color:#8d8d8e;margin-top:0;margin-bottom:0;font-size:14px"><?php esc_html_e( 'TrustScore', 'cozy-addons' ); ?> <strong><mark style="background-color:rgba(0, 0, 0, 0);color:#020e14" class="has-inline-color"><?php esc_html_e( '887', 'cozy-addons' ); ?></mark> </strong><?php esc_html_e( 'reviews', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"top","width":"","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"210px","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"22px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"}},"cozyCustomFont":"Geist"} -->
+<h3 class="wp-block-heading" style="font-size:22px;font-style:normal;font-weight:600;line-height:1.3"><?php esc_html_e( 'Yelp', 'cozy-addons' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"scale":"contain","sizeSlug":"large","linkDestination":"none","className":"is-style-default","style":{"color":{"duotone":["rgb(255, 42, 0)","#fffffe"]},"spacing":{"margin":{"top":"8px","bottom":"8px","left":"0","right":"0"}},"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-image size-large is-style-default" style="margin-top:8px;margin-right:0;margin-bottom:8px;margin-left:0"><img src="https://plugins.cozythemes.com/cozy-addons/assets/media/stars_fill.png" alt="" style="object-fit:contain"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"color":{"text":"#8d8d8e"},"elements":{"link":{"color":{"text":"#8d8d8e"}}},"spacing":{"margin":{"top":"0","bottom":"0"}}},"cozyCustomFont":"Public Sans"} -->
+<p class="has-text-color has-link-color" style="color:#8d8d8e;margin-top:0;margin-bottom:0;font-size:14px"><?php esc_html_e( 'Hostadvice', 'cozy-addons' ); ?> <strong><mark style="background-color:rgba(0, 0, 0, 0);color:#020e14" class="has-inline-color"><?php esc_html_e( '1,887', 'cozy-addons' ); ?></mark> </strong><?php esc_html_e( 'reviews', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"top","width":"20%","style":{"spacing":{"blockGap":"0"}}} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:20%"><!-- wp:cozy-block/icon-list {"blockClientId":"7ebdf1f5-3023-4c75-9288-ff1254185ebe","iconLayout":"outline","iconSize":20,"iconColor":"#202020","containerStyles":{"width":"","height":"","gap":10,"padding":{"top":0,"right":0,"bottom":10,"left":0},"borderType":"none","borderWidth":1,"borderColor":"#000","borderColorHover":"","borderRadius":{"top":0,"right":0,"bottom":0,"left":0},"bgColor":"","bgColorHover":""},"typography":{"fontFamily":"Geist","fontSize":24,"color":"#000","colorHover":"","fontWeight":"600","letterCase":"none","decoration":"none","lineHeight":"1.2em","letterSpacing":""}} -->
+<ul class="cozy-block-icon-list vertical default outline" id="cozyBlock_7ebdf1f5_3023_4c75_9288_ff1254185ebe"><!-- wp:cozy-block/list-item {"blockClientId":"be957aad-d35c-4680-9a7c-54ed55cab7bf","iconViewBox":{"vx":"0","vy":"0","vw":"16","vh":"16"},"iconPath":"M14.292 15.5C12.5559 15.5 10.8406 15.1215 9.14616 14.3646C7.45171 13.6076 5.91005 12.5347 4.52116 11.1458C3.13227 9.75694 2.05935 8.21528 1.30241 6.52083C0.545464 4.82639 0.166992 3.11111 0.166992 1.375C0.166992 1.125 0.250326 0.916667 0.416992 0.75C0.583659 0.583333 0.791992 0.5 1.04199 0.5H4.41699C4.61144 0.5 4.78505 0.565972 4.93783 0.697917C5.0906 0.829861 5.18088 0.986111 5.20866 1.16667L5.75033 4.08333C5.7781 4.30556 5.77116 4.49306 5.72949 4.64583C5.68783 4.79861 5.61144 4.93056 5.50033 5.04167L3.47949 7.08333C3.75727 7.59722 4.08713 8.09375 4.46908 8.57292C4.85102 9.05208 5.27116 9.51389 5.72949 9.95833C6.16005 10.3889 6.61144 10.7882 7.08366 11.1562C7.55588 11.5243 8.05588 11.8611 8.58366 12.1667L10.542 10.2083C10.667 10.0833 10.8302 9.98958 11.0316 9.92708C11.233 9.86458 11.4309 9.84722 11.6253 9.875L14.5003 10.4583C14.6948 10.5139 14.8545 10.6146 14.9795 10.7604C15.1045 10.9062 15.167 11.0694 15.167 11.25V14.625C15.167 14.875 15.0837 15.0833 14.917 15.25C14.7503 15.4167 14.542 15.5 14.292 15.5Z","title":"+1(000)1234-567"} -->
+<li class="list-inline-block"><div class="cozy-block-list-item" id="cozyBlock_be957aad_d35c_4680_9a7c_54ed55cab7bf"><div class="list-icon-wrapper"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14.292 15.5C12.5559 15.5 10.8406 15.1215 9.14616 14.3646C7.45171 13.6076 5.91005 12.5347 4.52116 11.1458C3.13227 9.75694 2.05935 8.21528 1.30241 6.52083C0.545464 4.82639 0.166992 3.11111 0.166992 1.375C0.166992 1.125 0.250326 0.916667 0.416992 0.75C0.583659 0.583333 0.791992 0.5 1.04199 0.5H4.41699C4.61144 0.5 4.78505 0.565972 4.93783 0.697917C5.0906 0.829861 5.18088 0.986111 5.20866 1.16667L5.75033 4.08333C5.7781 4.30556 5.77116 4.49306 5.72949 4.64583C5.68783 4.79861 5.61144 4.93056 5.50033 5.04167L3.47949 7.08333C3.75727 7.59722 4.08713 8.09375 4.46908 8.57292C4.85102 9.05208 5.27116 9.51389 5.72949 9.95833C6.16005 10.3889 6.61144 10.7882 7.08366 11.1562C7.55588 11.5243 8.05588 11.8611 8.58366 12.1667L10.542 10.2083C10.667 10.0833 10.8302 9.98958 11.0316 9.92708C11.233 9.86458 11.4309 9.84722 11.6253 9.875L14.5003 10.4583C14.6948 10.5139 14.8545 10.6146 14.9795 10.7604C15.1045 10.9062 15.167 11.0694 15.167 11.25V14.625C15.167 14.875 15.0837 15.0833 14.917 15.25C14.7503 15.4167 14.542 15.5 14.292 15.5Z"></path></svg></div><p><?php esc_html_e( '+1(000)1234-567', 'cozy-addons' ); ?></p></div></li>
+<!-- /wp:cozy-block/list-item --></ul>
+<!-- /wp:cozy-block/icon-list -->
+
+<!-- wp:cozy-block/icon-list {"blockClientId":"7a0e093e-ae6c-4892-9e2f-d23765be280c","iconLayout":"outline","iconSize":18,"iconColor":"#202020","containerStyles":{"width":"","height":"","gap":10,"padding":{"top":0,"right":0,"bottom":0,"left":0},"borderType":"none","borderWidth":1,"borderColor":"#000","borderColorHover":"","borderRadius":{"top":0,"right":0,"bottom":0,"left":0},"bgColor":"","bgColorHover":""},"typography":{"fontFamily":"Baloo 2","fontSize":15,"color":"#202020","colorHover":"","fontWeight":"400","letterCase":"none","decoration":"none","lineHeight":"","letterSpacing":""}} -->
+<ul class="cozy-block-icon-list vertical default outline" id="cozyBlock_7a0e093e_ae6c_4892_9e2f_d23765be280c"><!-- wp:cozy-block/list-item {"blockClientId":"87f36092-b188-4a72-a24f-3dee26ba1169","iconViewBox":{"vx":"0","vy":"0","vw":"25","vh":"19"},"iconPath":"M24.5264 6.19141C24.7168 6.04004 25 6.18164 25 6.4209V16.4062C25 17.7002 23.9502 18.75 22.6562 18.75H2.34375C1.0498 18.75 0 17.7002 0 16.4062V6.42578C0 6.18164 0.27832 6.04492 0.473633 6.19629C1.56738 7.0459 3.01758 8.125 7.99805 11.7432C9.02832 12.4951 10.7666 14.0771 12.5 14.0674C14.2432 14.082 16.0156 12.4658 17.0068 11.7432C21.9873 8.125 23.4326 7.04102 24.5264 6.19141ZM12.5 12.5C13.6328 12.5195 15.2637 11.0742 16.084 10.4785C22.5635 5.77637 23.0566 5.36621 24.5508 4.19434C24.834 3.97461 25 3.63281 25 3.27148V2.34375C25 1.0498 23.9502 0 22.6562 0H2.34375C1.0498 0 0 1.0498 0 2.34375V3.27148C0 3.63281 0.166016 3.96973 0.449219 4.19434C1.94336 5.36133 2.43652 5.77637 8.91602 10.4785C9.73633 11.0742 11.3672 12.5195 12.5 12.5Z","title":"info@sampleemail.com"} -->
+<li class="list-inline-block"><div class="cozy-block-list-item" id="cozyBlock_87f36092_b188_4a72_a24f_3dee26ba1169"><div class="list-icon-wrapper"><svg viewBox="0 0 25 19" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24.5264 6.19141C24.7168 6.04004 25 6.18164 25 6.4209V16.4062C25 17.7002 23.9502 18.75 22.6562 18.75H2.34375C1.0498 18.75 0 17.7002 0 16.4062V6.42578C0 6.18164 0.27832 6.04492 0.473633 6.19629C1.56738 7.0459 3.01758 8.125 7.99805 11.7432C9.02832 12.4951 10.7666 14.0771 12.5 14.0674C14.2432 14.082 16.0156 12.4658 17.0068 11.7432C21.9873 8.125 23.4326 7.04102 24.5264 6.19141ZM12.5 12.5C13.6328 12.5195 15.2637 11.0742 16.084 10.4785C22.5635 5.77637 23.0566 5.36621 24.5508 4.19434C24.834 3.97461 25 3.63281 25 3.27148V2.34375C25 1.0498 23.9502 0 22.6562 0H2.34375C1.0498 0 0 1.0498 0 2.34375V3.27148C0 3.63281 0.166016 3.96973 0.449219 4.19434C1.94336 5.36133 2.43652 5.77637 8.91602 10.4785C9.73633 11.0742 11.3672 12.5195 12.5 12.5Z"></path></svg></div><p><?php esc_html_e( 'info@sampleemail.com', 'cozy-addons' ); ?></p></div></li>
+<!-- /wp:cozy-block/list-item --></ul>
+<!-- /wp:cozy-block/icon-list --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

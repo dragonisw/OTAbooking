@@ -1,0 +1,21 @@
+<!-- wp:cover {"url":"https://plugins.cozythemes.com/cozy-addons/assets/media/hero-47.png","hasParallax":true,"dimRatio":50,"customOverlayColor":"#1b1c32","isUserOverlayColor":true,"minHeight":720,"isDark":false,"className":"ca-pattern__responsive-cover","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"1180px"}} -->
+<div class="wp-block-cover is-light has-parallax ca-pattern__responsive-cover" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:720px"><div class="wp-block-cover__image-background has-parallax" style="background-position:50% 50%;background-image:url(https://plugins.cozythemes.com/cozy-addons/assets/media/hero-47.png)"></div><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#1b1c32"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"color":{"text":"#f8f8f8"},"elements":{"link":{"color":{"text":"#f8f8f8"}}},"typography":{"fontSize":"18px","lineHeight":1.6,"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"0","padding":{"top":"80px","bottom":"80px","left":"26px","right":"26px"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"950px"},"cozyCustomFont":"Inter","cozyAnimation":{"type":"fade-up","easingFunction":"ease","anchorPlacement":"top-bottom","duration":600}} -->
+<div class="wp-block-group has-text-color has-link-color" style="color:#f8f8f8;margin-top:0;margin-bottom:0;padding-top:80px;padding-right:26px;padding-bottom:80px;padding-left:26px;font-size:18px;font-style:normal;font-weight:400;line-height:1.6"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"64px","fontStyle":"normal","fontWeight":"400","lineHeight":"1.2"},"elements":{"link":{"color":{"text":"#fffffe"}}},"color":{"text":"#fffffe"}},"cozyCustomFont":"Plus Jakarta Sans"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#fffffe;font-size:64px;font-style:normal;font-weight:400;line-height:1.2"><?php esc_html_e( 'Enjoy Nature While Travelling', 'cozy-addons' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"22px"}}}} -->
+<p class="has-text-align-center" style="margin-top:22px"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'cozy-addons' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"36px"},"blockGap":{"top":"16px","left":"16px"}},"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"500"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons has-custom-font-size" style="margin-top:36px;font-size:16px;font-style:normal;font-weight:500"><!-- wp:button {"style":{"color":{"background":"#5b66ff"},"border":{"radius":"0px"},"spacing":{"padding":{"left":"38px","right":"38px","top":"16px","bottom":"16px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-background wp-element-button" style="border-radius:0px;background-color:#5b66ff;padding-top:16px;padding-right:38px;padding-bottom:16px;padding-left:38px"><?php esc_html_e( 'Get Started', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"style":{"color":{"background":"#5c67ff00"},"border":{"radius":"0px","color":"#fffffe","width":"1px"},"spacing":{"padding":{"left":"38px","right":"38px","top":"15px","bottom":"15px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-background has-border-color wp-element-button" style="border-color:#fffffe;border-width:1px;border-radius:0px;background-color:#5c67ff00;padding-top:15px;padding-right:38px;padding-bottom:15px;padding-left:38px"><?php esc_html_e( 'Explore More', 'cozy-addons' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
