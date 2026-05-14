@@ -1,152 +1,556 @@
 <?php /* Template Name: trang chủ*/ ?>
 <?php get_header(); ?>
 
+<style>
+    /* ===== DYNAMIC HERO BANNER STYLES ===== */
+
+    /* Hero section full-height */
+    .hero-banner-section {
+        position: relative;
+        min-height: 600px;
+        height: 100vh;
+        max-height: 850px;
+        overflow: hidden;
+    }
+
+    /* Swiper fills section */
+    .main-hero-swiper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+    }
+
+    /* Ken Burns zoom animation on each slide image */
+    .hero-slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform-origin: center center;
+        animation: none;
+        transition: transform 0.5s ease;
+    }
+
+    .swiper-slide-active .hero-slide-img {
+        animation: kenBurns 7s ease-out forwards;
+    }
+
+    @keyframes kenBurns {
+        0%   { transform: scale(1.08) translateX(0px); }
+        100% { transform: scale(1) translateX(0px); }
+    }
+
+    /* Gradient overlays */
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(10, 20, 40, 0.35) 0%,
+            rgba(10, 20, 40, 0.25) 40%,
+            rgba(10, 20, 40, 0.65) 100%
+        );
+        z-index: 1;
+    }
+
+    /* Shimmer particle overlay */
+    .hero-particles {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .hero-particles::before {
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left: -50%;
+        background-image:
+            radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px),
+            radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+        background-size: 50px 50px, 90px 90px;
+        background-position: 0 0, 25px 25px;
+        animation: particleDrift 30s linear infinite;
+    }
+
+    @keyframes particleDrift {
+        0%   { transform: translate(0, 0); }
+        100% { transform: translate(50px, 50px); }
+    }
+
+    /* Hero content container - chỉ chứa text, căn giữa */
+    .hero-content-wrapper {
+        position: absolute;
+        inset: 0;
+        bottom: 160px; /* để lại chỗ cho search bar ở dưới */
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+
+    .hero-content-inner {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        text-align: center;
+        pointer-events: auto;
+        padding-top: 5rem;
+    }
+
+    /* Search bar floating at bottom of banner */
+    .hero-search-outer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 15;
+        padding: 0 1rem 2.5rem;
+        display: flex;
+        justify-content: center;
+        pointer-events: auto;
+    }
+
+    .hero-search-outer .hero-search-wrapper {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    @media (max-width: 767px) {
+        .hero-content-wrapper {
+            bottom: 200px;
+        }
+        .hero-search-outer {
+            padding: 0 0.75rem 1.5rem;
+        }
+    }
+
+    /* Badge above title */
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.25);
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.4rem 1rem;
+        border-radius: 9999px;
+        margin-bottom: 1.25rem;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s;
+    }
+
+    .hero-badge .badge-dot {
+        width: 6px;
+        height: 6px;
+        background: #60a5fa;
+        border-radius: 50%;
+        animation: pulseDot 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%       { opacity: 0.5; transform: scale(1.4); }
+    }
+
+    /* Hero title animation */
+    .hero-title {
+        font-size: clamp(2.2rem, 6vw, 5.5rem);
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.1;
+        margin-bottom: 1.25rem;
+        text-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        opacity: 0;
+        transform: translateY(35px);
+        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s,
+                    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+    }
+
+    /* Hero subtitle animation */
+    .hero-subtitle {
+        font-size: clamp(0.95rem, 2vw, 1.25rem);
+        color: rgba(255,255,255,0.88);
+        max-width: 640px;
+        margin: 0 auto 2.5rem;
+        line-height: 1.7;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        opacity: 0;
+        transform: translateY(25px);
+        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s,
+                    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s;
+    }
+
+    /* Search bar wrapper - now standalone, no animation needed */
+    .hero-search-wrapper {
+        pointer-events: auto;
+    }
+
+    /* Active slide triggers text animations */
+    .banner-text-visible .hero-badge,
+    .banner-text-visible .hero-title,
+    .banner-text-visible .hero-subtitle {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Navigation Arrows */
+    .hero-nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+        width: 52px;
+        height: 52px;
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 50%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero-nav-btn:hover {
+        background: rgba(255,255,255,0.28);
+        transform: translateY(-50%) scale(1.08);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    .hero-nav-prev { left: 20px; }
+    .hero-nav-next { right: 20px; }
+
+    @media (min-width: 768px) {
+        .hero-nav-prev { left: 36px; }
+        .hero-nav-next { right: 36px; }
+    }
+
+    /* Pagination & Progress - above search bar */
+    .hero-pagination-wrap {
+        position: absolute;
+        bottom: 160px; /* above search bar */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 9999px;
+        background: rgba(255,255,255,0.4);
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .hero-dot.active {
+        width: 32px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
+
+    /* Slide counter - above search bar */
+    .hero-counter {
+        position: absolute;
+        bottom: 155px;
+        right: 36px;
+        z-index: 20;
+        color: rgba(255,255,255,0.7);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+    }
+
+    .hero-counter span.current {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    /* Progress bar */
+    .hero-progress-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(to right, #60a5fa, #a78bfa);
+        z-index: 20;
+        width: 0%;
+        transition: none;
+        box-shadow: 0 0 10px rgba(96, 165, 250, 0.6);
+    }
+
+    .hero-progress-bar.animating {
+        transition: width 5s linear;
+        width: 100%;
+    }
+
+    /* Scroll hint */
+    .hero-scroll-hint {
+        position: absolute;
+        bottom: 32px;
+        left: 36px;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255,255,255,0.65);
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .scroll-mouse {
+        width: 20px;
+        height: 32px;
+        border: 2px solid rgba(255,255,255,0.5);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+    .scroll-mouse::before {
+        content: '';
+        width: 3px;
+        height: 7px;
+        background: rgba(255,255,255,0.8);
+        border-radius: 2px;
+        animation: scrollBounce 1.8s ease-in-out infinite;
+    }
+
+    @keyframes scrollBounce {
+        0%, 100% { transform: translateY(0); opacity: 1; }
+        50%       { transform: translateY(6px); opacity: 0.4; }
+    }
+
+    @media (max-width: 767px) {
+        .hero-scroll-hint,
+        .hero-counter { display: none; }
+        .hero-nav-btn { width: 40px; height: 40px; }
+        .hero-banner-section { min-height: 640px; height: 100vh; max-height: 780px; }
+        .hero-content-wrapper { bottom: 230px; }
+        .hero-search-outer { padding: 0 0.75rem 1rem; }
+        .hero-pagination-wrap { bottom: 210px; }
+    }
+</style>
+
 <main>
-    <!-- Hero Section with Swiper Slider -->
-    <section class="relative min-h-[550px] md:h-[650px] overflow-hidden transition-all duration-300">
+    <!-- Hero Section - Dynamic Banner -->
+    <section class="hero-banner-section" id="hero-banner">
         <?php
         $banner_ids = get_post_meta(get_the_ID(), '_home_banner_ids', true);
         $banners = $banner_ids ? explode(',', $banner_ids) : array();
         ?>
-        
-        <div class="swiper main-hero-swiper h-full w-full">
+
+        <!-- Swiper Slider -->
+        <div class="swiper main-hero-swiper">
             <div class="swiper-wrapper">
                 <?php if (!empty($banners)): ?>
                     <?php foreach ($banners as $id): ?>
-                        <div class="swiper-slide relative">
+                        <div class="swiper-slide">
                             <?php $img_url = wp_get_attachment_image_url($id, 'full'); ?>
-                            <img src="<?php echo esc_url($img_url); ?>" alt="Banner" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[1px]"></div>
+                            <img src="<?php echo esc_url($img_url); ?>" alt="Banner" class="hero-slide-img">
+                            <div class="hero-overlay"></div>
                         </div>
                     <?php endforeach; ?>
                 <?php else: ?>
-                    <!-- Default Fallback Banner -->
-                    <div class="swiper-slide relative">
+                    <!-- Default Fallback Banners -->
+                    <div class="swiper-slide">
                         <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=2000"
-                            alt="Luxury Hotel" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px]"></div>
+                            alt="Luxury Hotel" class="hero-slide-img">
+                        <div class="hero-overlay"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=2000"
+                            alt="Resort Pool" class="hero-slide-img">
+                        <div class="hero-overlay"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&q=80&w=2000"
+                            alt="Luxury Room" class="hero-slide-img">
+                        <div class="hero-overlay"></div>
                     </div>
                 <?php endif; ?>
             </div>
         </div>
 
-        <div class="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-            <div class="container mx-auto px-4 text-center pointer-events-auto pt-24 md:pt-12">
+        <!-- Particle Shimmer Overlay -->
+        <div class="hero-particles"></div>
+
+        <!-- Navigation Arrows -->
+        <button class="hero-nav-btn hero-nav-prev" id="hero-prev" aria-label="Slide trước">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+        <button class="hero-nav-btn hero-nav-next" id="hero-next" aria-label="Slide tiếp theo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </button>
+
+        <!-- Scroll Hint -->  
+        <div class="hero-scroll-hint">
+            <div class="scroll-mouse"></div>
+            <span>Cuộn xuống</span>
+        </div>
+
+        <!-- Slide Counter -->
+        <div class="hero-counter" id="hero-counter">
+            <span class="current" id="hero-current">01</span>
+            <span> / </span>
+            <span id="hero-total">01</span>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="hero-pagination-wrap" id="hero-pagination"></div>
+
+        <!-- Progress Bar -->
+        <div class="hero-progress-bar" id="hero-progress"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content-wrapper">
+            <div class="hero-content-inner" id="hero-text-block">
                 <?php
-                $hero_title = get_post_meta(get_the_ID(), '_home_hero_title', true) ?: 'Khám phá Kỳ nghỉ <br><span class="text-blue-400">Hoàn hảo</span> của Bạn';
+                $hero_title = get_post_meta(get_the_ID(), '_home_hero_title', true) ?: 'Khám phá Kỳ nghỉ <br><span style="color:#60a5fa">Hoàn hảo</span> của Bạn';
                 $hero_subtitle = get_post_meta(get_the_ID(), '_home_hero_subtitle', true) ?: 'Hơn 500.000 khách sạn và resort sang trọng trên toàn thế giới đang chờ đón bạn với giá ưu đãi nhất.';
                 ?>
-                <h1 class="text-3xl sm:text-4xl md:text-7xl font-bold text-white mb-4 md:mb-6 animate-fade-in-up drop-shadow-lg leading-tight">
+
+                <!-- Animated Badge -->
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>✦ Trải nghiệm đẳng cấp 5 sao</span>
+                </div>
+
+                <!-- Animated Title -->
+                <h1 class="hero-title">
                     <?php echo $hero_title; ?>
                 </h1>
-                <div class="text-base md:text-xl text-slate-100 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed opacity-90 drop-shadow-md px-4">
-                    <?php echo $hero_subtitle; ?>
-                </div>
 
-                <!-- Search Bar -->
-                <div class="bg-white p-5 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl max-w-[1400px] mx-auto pointer-events-auto mt-4">
-                    <?php
-                    $use_external = get_theme_mod('use_external_booking', 'no');
-                    $engine_url = get_theme_mod('booking_engine_url', '');
-                    $form_action = ($use_external === 'yes' && !empty($engine_url)) ? $engine_url : home_url('/rooms');
-                    ?>
-                    <form id="search-form" action="<?php echo esc_url($form_action) ?>" method="get"
-                        class="grid grid-cols-2 md:grid-cols-7 gap-3 md:gap-4 items-start">
-                        <?php if ($use_external !== 'yes'): ?>
-                            <input type="hidden" name="post_type" value="room">
-                        <?php endif; ?>
+                <!-- Animated Subtitle -->
+                <p class="hero-subtitle">
+                    <?php echo wp_strip_all_tags($hero_subtitle); ?>
+                </p>
 
+            </div><!-- /.hero-content-inner -->
+        </div><!-- /.hero-content-wrapper -->
 
-                        <div class="text-left col-span-2 md:col-span-2">
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Địa
-                                điểm</label>
-                            <div class="relative">
-                                <input type="text" id="location-input" name="s" placeholder="Bạn muốn đi đâu?"
-                                    class="w-full bg-slate-50 border-none rounded-xl py-3.5 pl-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all">
-                            </div>
+        <!-- Search Bar - Fixed at bottom of banner -->
+        <div class="hero-search-outer">
+            <div class="hero-search-wrapper">
+            <div class="bg-white/95 backdrop-blur-sm p-5 md:p-6 rounded-2xl shadow-2xl w-full">
+                <?php
+                $use_external = get_theme_mod('use_external_booking', 'no');
+                $engine_url = get_theme_mod('booking_engine_url', '');
+                $form_action = ($use_external === 'yes' && !empty($engine_url)) ? $engine_url : home_url('/rooms');
+                ?>
+                <form id="search-form" action="<?php echo esc_url($form_action) ?>" method="get"
+                    class="grid grid-cols-2 md:grid-cols-7 gap-3 md:gap-4 items-start">
+                    <?php if ($use_external !== 'yes'): ?>
+                        <input type="hidden" name="post_type" value="room">
+                    <?php endif; ?>
+
+                    <div class="text-left col-span-2 md:col-span-2">
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Địa điểm</label>
+                        <div class="relative">
+                            <input type="text" id="location-input" name="s" placeholder="Bạn muốn đi đâu?"
+                                class="w-full bg-slate-50 border-none rounded-xl py-3.5 pl-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all">
                         </div>
+                    </div>
 
-                        <div class="text-left col-span-1">
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Nhận
-                                phòng</label>
-                            <input type="date" id="check-in-date"
-                                name="<?php echo ($use_external === 'yes') ? 'checkin' : 'check_in'; ?>"
-                                class="w-full bg-slate-50 border-none rounded-xl py-3.5 px-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all">
-                        </div>
+                    <div class="text-left col-span-1">
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Nhận phòng</label>
+                        <input type="date" id="check-in-date"
+                            name="<?php echo ($use_external === 'yes') ? 'checkin' : 'check_in'; ?>"
+                            class="w-full bg-slate-50 border-none rounded-xl py-3.5 px-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all">
+                    </div>
 
+                    <div class="text-left col-span-1">
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Trả phòng</label>
+                        <input type="date" id="check-out-date"
+                            name="<?php echo ($use_external === 'yes') ? 'checkout' : 'check_out'; ?>"
+                            class="w-full bg-slate-50 border-none rounded-xl py-3.5 px-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all">
+                    </div>
 
-                        <div class="text-left col-span-1">
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Trả
-                                phòng</label>
-                            <input type="date" id="check-out-date"
-                                name="<?php echo ($use_external === 'yes') ? 'checkout' : 'check_out'; ?>"
-                                class="w-full bg-slate-50 border-none rounded-xl py-3.5 px-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all">
-                        </div>
-
-
-                        <div class="text-left col-span-1">
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Người
-                                lớn</label>
-                            <div class="relative">
-                                <select name="adults"
-                                    class="w-full bg-slate-50 border-none rounded-xl py-3.5 px-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all appearance-none cursor-pointer">
-                                    <option value="1">1 Người lớn</option>
-                                    <option value="2" selected>2 Người lớn</option>
-                                    <option value="3">3 Người lớn</option>
-                                    <option value="4">4 Người lớn</option>
-                                    <option value="5">5+ Người lớn</option>
-                                </select>
-                                <div class="absolute right-3 bottom-4 pointer-events-none text-slate-400">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-left col-span-1">
-                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Trẻ
-                                em</label>
-                            <div class="relative">
-                                <select name="children"
-                                    class="w-full bg-slate-50 border-none rounded-xl py-3.5 px-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all appearance-none cursor-pointer">
-                                    <option value="0">0 Trẻ em</option>
-                                    <option value="1">1 Trẻ em</option>
-                                    <option value="2">2 Trẻ em</option>
-                                    <option value="3">3+ Trẻ em</option>
-                                </select>
-                                <div class="absolute right-3 bottom-4 pointer-events-none text-slate-400">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-left col-span-2 md:col-span-1">
-                            <label
-                                class="hidden md:block text-xs font-bold text-transparent uppercase tracking-wider mb-2 ml-1 select-none">Tìm
-                                kiếm</label>
-                            <button type="submit"
-                                class="w-full bg-blue-600 text-white font-bold py-[15px] rounded-xl hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-200/50 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    <div class="text-left col-span-1">
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Người lớn</label>
+                        <div class="relative">
+                            <select name="adults"
+                                class="w-full bg-slate-50 border-none rounded-xl py-3.5 px-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all appearance-none cursor-pointer">
+                                <option value="1">1 Người lớn</option>
+                                <option value="2" selected>2 Người lớn</option>
+                                <option value="3">3 Người lớn</option>
+                                <option value="4">4 Người lớn</option>
+                                <option value="5">5+ Người lớn</option>
+                            </select>
+                            <div class="absolute right-3 bottom-4 pointer-events-none text-slate-400">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
-                                Tìm kiếm
-                            </button>
+                            </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+
+                    <div class="text-left col-span-1">
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 ml-1">Trẻ em</label>
+                        <div class="relative">
+                            <select name="children"
+                                class="w-full bg-slate-50 border-none rounded-xl py-3.5 px-4 focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all appearance-none cursor-pointer">
+                                <option value="0">0 Trẻ em</option>
+                                <option value="1">1 Trẻ em</option>
+                                <option value="2">2 Trẻ em</option>
+                                <option value="3">3+ Trẻ em</option>
+                            </select>
+                            <div class="absolute right-3 bottom-4 pointer-events-none text-slate-400">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-left col-span-2 md:col-span-1">
+                        <label class="hidden md:block text-xs font-bold text-transparent uppercase tracking-wider mb-2 ml-1 select-none">Tìm kiếm</label>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white font-bold py-[15px] rounded-xl hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-200/50 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                            Tìm kiếm
+                        </button>
+                    </div>
+                </form>
             </div>
-        </div>
-    </section>
+            </div><!-- /.hero-search-wrapper -->
+        </div><!-- /.hero-search-outer -->
+
+    </section><!-- /.hero-banner-section -->
 
     <!-- Featured Destinations -->
-    <section class="py-24 bg-white">
+    <section class="pt-16 pb-24 bg-white">
         <div class="container mx-auto px-4">
             <div class="flex items-end justify-between mb-12">
                 <div>
@@ -600,20 +1004,141 @@
             });
         }
 
-        // Initialize Swiper for Hero Banner
+        // ===== Dynamic Hero Banner Initialization =====
+
+        // Always trigger text animation on load (regardless of Swiper)
+        function triggerTextAnim() {
+            const block = document.getElementById('hero-text-block');
+            if (block) {
+                block.classList.remove('banner-text-visible');
+                void block.offsetWidth; // force reflow
+                block.classList.add('banner-text-visible');
+            }
+        }
+
+        // Trigger immediately on page load
+        setTimeout(triggerTextAnim, 150);
+
         if (typeof Swiper !== 'undefined') {
-            new Swiper('.main-hero-swiper', {
-                loop: true,
-                speed: 1500,
-                autoplay: {
-                    delay: 5000,
+            const heroAutoplayDelay = 5000;
+
+            // Count real slides (not duplicates)
+            const realSlideCount = document.querySelectorAll('.main-hero-swiper .swiper-slide').length;
+            const useLoop = realSlideCount > 1;
+
+            const heroSwiper = new Swiper('.main-hero-swiper', {
+                loop: useLoop,
+                speed: 1200,
+                autoplay: useLoop ? {
+                    delay: heroAutoplayDelay,
                     disableOnInteraction: false,
-                },
+                } : false,
                 effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
+                fadeEffect: { crossFade: true },
+                allowTouchMove: useLoop,
+                grabCursor: useLoop,
+                navigation: useLoop ? {
+                    prevEl: '#hero-prev',
+                    nextEl: '#hero-next',
+                } : false,
+                on: {
+                    init: function() {
+                        updateHeroUI(this);
+                        if (useLoop) {
+                            startHeroProgress();
+                        }
+                        // Hide nav arrows if only 1 slide
+                        if (!useLoop) {
+                            document.getElementById('hero-prev') && (document.getElementById('hero-prev').style.display = 'none');
+                            document.getElementById('hero-next') && (document.getElementById('hero-next').style.display = 'none');
+                            document.getElementById('hero-pagination') && (document.getElementById('hero-pagination').style.display = 'none');
+                            document.getElementById('hero-counter') && (document.getElementById('hero-counter').style.display = 'none');
+                            document.getElementById('hero-progress') && (document.getElementById('hero-progress').style.display = 'none');
+                        }
+                    },
+                    slideChangeTransitionStart: function() {
+                        const block = document.getElementById('hero-text-block');
+                        if (block) block.classList.remove('banner-text-visible');
+                        resetHeroProgress();
+                    },
+                    slideChangeTransitionEnd: function() {
+                        updateHeroUI(this);
+                        startHeroProgress();
+                        triggerTextAnim();
+                    }
                 }
             });
+
+            // Build pagination dots
+            function buildPagination(swiper) {
+                const pag = document.getElementById('hero-pagination');
+                if (!pag) return;
+                const slideCount = document.querySelectorAll('.main-hero-swiper .swiper-slide:not(.swiper-slide-duplicate)').length;
+                pag.innerHTML = '';
+                for (let i = 0; i < slideCount; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+                    dot.dataset.index = i;
+                    dot.addEventListener('click', function() {
+                        heroSwiper.slideToLoop(parseInt(this.dataset.index));
+                    });
+                    pag.appendChild(dot);
+                }
+            }
+
+            function updatePagination(swiper) {
+                const dots = document.querySelectorAll('.hero-dot');
+                const realIdx = swiper.realIndex;
+                dots.forEach((d, i) => {
+                    d.classList.toggle('active', i === realIdx);
+                });
+            }
+
+            function updateHeroUI(swiper) {
+                const current = document.getElementById('hero-current');
+                const total = document.getElementById('hero-total');
+                const slideCount = document.querySelectorAll('.main-hero-swiper .swiper-slide:not(.swiper-slide-duplicate)').length;
+                if (current) current.textContent = String(swiper.realIndex + 1).padStart(2, '0');
+                if (total) total.textContent = String(slideCount).padStart(2, '0');
+                const pag = document.getElementById('hero-pagination');
+                if (pag && pag.children.length === 0) buildPagination(swiper);
+                updatePagination(swiper);
+            }
+
+            // Progress bar
+            let progressTimeout;
+            function startHeroProgress() {
+                const bar = document.getElementById('hero-progress');
+                if (!bar) return;
+                bar.style.transition = 'none';
+                bar.style.width = '0%';
+                clearTimeout(progressTimeout);
+                progressTimeout = setTimeout(() => {
+                    bar.style.transition = 'width ' + heroAutoplayDelay + 'ms linear';
+                    bar.style.width = '100%';
+                }, 50);
+            }
+
+            function resetHeroProgress() {
+                const bar = document.getElementById('hero-progress');
+                if (!bar) return;
+                bar.style.transition = 'none';
+                bar.style.width = '0%';
+                clearTimeout(progressTimeout);
+            }
+
+            // Pause on hover
+            const heroSection = document.getElementById('hero-banner');
+            if (heroSection && useLoop) {
+                heroSection.addEventListener('mouseenter', () => {
+                    heroSwiper.autoplay.stop();
+                    resetHeroProgress();
+                });
+                heroSection.addEventListener('mouseleave', () => {
+                    heroSwiper.autoplay.start();
+                    startHeroProgress();
+                });
+            }
         }
     });
 </script>

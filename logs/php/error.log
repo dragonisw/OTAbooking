@@ -20,3 +20,15 @@ Stack trace:
 #7 C:\Users\Minh\Local Sites\booking\app\public\wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
 #8 {main}
   thrown in C:\Users\Minh\Local Sites\booking\app\public\wp-admin\includes\class-wp-debug-data.php on line 156
+[14-May-2026 04:08:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_core_updates() in C:\Users\Minh\Local Sites\booking\app\public\wp-admin\includes\class-wp-debug-data.php:156
+Stack trace:
+#0 C:\Users\Minh\Local Sites\booking\app\public\wp-admin\includes\class-wp-debug-data.php(47): WP_Debug_Data::get_wp_core()
+#1 C:\Users\Minh\Local Sites\booking\app\public\wp-content\plugins\advanced-import\admin\class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#2 C:\Users\Minh\Local Sites\booking\app\public\wp-content\plugins\advanced-import\admin\class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#3 C:\Users\Minh\Local Sites\booking\app\public\wp-content\plugins\advanced-import\admin\class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#4 C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-hook.php(341): Advanced_Import_Tracking->do_post()
+#5 C:\Users\Minh\Local Sites\booking\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#6 C:\Users\Minh\Local Sites\booking\app\public\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#7 C:\Users\Minh\Local Sites\booking\app\public\wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#8 {main}
+  thrown in C:\Users\Minh\Local Sites\booking\app\public\wp-admin\includes\class-wp-debug-data.php on line 156
