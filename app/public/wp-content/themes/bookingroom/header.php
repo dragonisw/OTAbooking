@@ -82,8 +82,8 @@
         ?>
         .custom-logo-container img {
             max-height:
-                <?php echo min($logo_height, 70); ?>
-                px;
+                <?php echo min($logo_height, 70) . 'px'; ?>
+            ;
             width: auto;
             display: block;
         }
@@ -91,22 +91,22 @@
         @media (min-width: 768px) {
             .custom-logo-container img {
                 max-height:
-                    <?php echo $logo_height; ?>
-                    px;
+                    <?php echo $logo_height . 'px'; ?>
+                ;
             }
         }
 
         #masthead.is-scrolled .custom-logo-container img {
             max-height:
-                <?php echo min($logo_height_scrolled, 50); ?>
-                px;
+                <?php echo min($logo_height_scrolled, 50) . 'px'; ?>
+            ;
         }
 
         @media (min-width: 768px) {
             #masthead.is-scrolled .custom-logo-container img {
                 max-height:
-                    <?php echo $logo_height_scrolled; ?>
-                    px;
+                    <?php echo $logo_height_scrolled . 'px'; ?>
+                ;
             }
         }
     </style>
@@ -134,9 +134,9 @@
 
             window.addEventListener('scroll', handleScroll);
             window.addEventListener('resize', adjustHeroMargin);
-            
+
             handleScroll(); // Initial check
-            
+
             // Allow images to load before final height calculation
             setTimeout(adjustHeroMargin, 100);
             window.addEventListener('load', adjustHeroMargin);
