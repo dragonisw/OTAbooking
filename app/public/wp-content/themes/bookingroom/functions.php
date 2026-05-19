@@ -480,7 +480,7 @@ function bookingroom_customize_register($wp_customize)
 
     // Add Logo Height setting to Site Identity
     $wp_customize->add_setting('logo_height', array(
-        'default' => 70,
+        'default' => 100,
         'transport' => 'refresh',
         'sanitize_callback' => 'absint',
     ));
@@ -490,7 +490,7 @@ function bookingroom_customize_register($wp_customize)
         'type' => 'number',
         'input_attrs' => array(
             'min' => 20,
-            'max' => 200,
+            'max' => 1000,
             'step' => 5,
         ),
     ));

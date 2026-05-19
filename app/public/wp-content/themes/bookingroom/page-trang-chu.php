@@ -412,25 +412,8 @@
             </svg>
         </button>
 
-        <!-- Scroll Hint -->  
-        <div class="hero-scroll-hint">
-            <div class="scroll-mouse"></div>
-            <span>Cuộn xuống</span>
-        </div>
-
-        <!-- Slide Counter -->
-        <div class="hero-counter" id="hero-counter">
-            <span class="current" id="hero-current">01</span>
-            <span> / </span>
-            <span id="hero-total">01</span>
-        </div>
-
-        <!-- Pagination Dots -->
-        <div class="hero-pagination-wrap" id="hero-pagination"></div>
-
-        <!-- Progress Bar -->
-        <div class="hero-progress-bar" id="hero-progress"></div>
-
+ 
+        
         <!-- Hero Content -->
         <div class="hero-content-wrapper">
             <div class="hero-content-inner" id="hero-text-block">

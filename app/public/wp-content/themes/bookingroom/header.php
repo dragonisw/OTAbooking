@@ -56,18 +56,7 @@
             color: #ffffff !important;
         }
 
-        /* Ensure hero section goes under header on home page */
-        .is-home-style main {
-            margin-top: -4rem;
-            /* Match mobile header height */
-        }
-
-        @media (min-width: 768px) {
-            .is-home-style main {
-                margin-top: -5rem;
-                /* Match desktop header height */
-            }
-        }
+        /* Ensure hero section goes under header on home page dynamically via JS */
 
         body.home #masthead:not(.is-scrolled) .header-btn {
             background-color: rgba(255, 255, 255, 0.15);
@@ -87,12 +76,13 @@
         }
 
         <?php
-        $logo_height = get_theme_mod('logo_height', 70);
-        $logo_height_scrolled = max(30, $logo_height - 20);
+        $raw_logo_height = get_theme_mod('logo_height', 80);
+        $logo_height = min(max(absint($raw_logo_height), 30), 120); // Cap between 30px and 120px to prevent layout breaks
+        $logo_height_scrolled = max(40, $logo_height - 30);
         ?>
         .custom-logo-container img {
             max-height:
-                <?php echo min($logo_height, 50); ?>
+                <?php echo min($logo_height, 70); ?>
                 px;
             width: auto;
             display: block;
@@ -108,7 +98,7 @@
 
         #masthead.is-scrolled .custom-logo-container img {
             max-height:
-                <?php echo min($logo_height_scrolled, 40); ?>
+                <?php echo min($logo_height_scrolled, 50); ?>
                 px;
         }
 
@@ -133,8 +123,23 @@
                 }
             }
 
+            function adjustHeroMargin() {
+                if (document.body.classList.contains('is-home-style')) {
+                    const main = document.querySelector('main');
+                    if (main && !header.classList.contains('is-scrolled')) {
+                        main.style.marginTop = '-' + header.offsetHeight + 'px';
+                    }
+                }
+            }
+
             window.addEventListener('scroll', handleScroll);
+            window.addEventListener('resize', adjustHeroMargin);
+            
             handleScroll(); // Initial check
+            
+            // Allow images to load before final height calculation
+            setTimeout(adjustHeroMargin, 100);
+            window.addEventListener('load', adjustHeroMargin);
 
             // Mobile Menu Toggle
             const menuOpenBtn = document.getElementById('mobile-menu-open');
@@ -171,7 +176,7 @@
 
     <header id="masthead" class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300">
         <div
-            class="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between header-container transition-all duration-300">
+            class="container mx-auto px-4 min-h-[4rem] md:min-h-[5rem] py-2 flex items-center justify-between header-container transition-all duration-300">
             <!-- Logo -->
             <div class="flex-1 flex items-center">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center group">
@@ -235,7 +240,7 @@
             <div class="flex items-center justify-between p-6 border-b border-slate-100">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center">
                     <?php if (has_custom_logo()): ?>
-                        <div class="custom-logo-container" style="max-height: 40px;">
+                        <div class="custom-logo-container" style="max-height: 60px;">
                             <?php the_custom_logo(); ?>
                         </div>
                     <?php else: ?>
