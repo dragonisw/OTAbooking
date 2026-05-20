@@ -14,9 +14,18 @@
             scroll-behavior: smooth;
         }
 
-        /* Sticky Header Effects */
+        /* Sticky/Fixed Header Transition */
         #masthead {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Home Page Fixed Header to Overlay Hero */
+        .is-home-style #masthead {
+            position: fixed !important;
+            width: 100%;
+            left: 0;
+            right: 0;
+            z-index: 50;
         }
 
         #masthead.is-scrolled {
@@ -56,19 +65,69 @@
             color: #ffffff !important;
         }
 
-        /* Ensure hero section goes under header on home page dynamically via JS */
+        /* Premium Nav Link Styles */
+        #masthead nav ul li a {
+            color: #475569 !important; /* slate-600 */
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            padding: 0.5rem 0;
+        }
 
+        #masthead nav ul li a:hover {
+            color: #2563eb !important; /* blue-600 */
+        }
+
+        #masthead nav ul li.current-menu-item a {
+            color: #2563eb !important; /* blue-600 */
+        }
+
+        #masthead nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #2563eb;
+            transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        #masthead nav ul li a:hover::after,
+        #masthead nav ul li.current-menu-item a::after {
+            width: 100%;
+        }
+
+        /* Home Page Transparent Header Link Colors */
+        .is-home-style #masthead:not(.is-scrolled) nav ul li a {
+            color: rgba(255, 255, 255, 0.85) !important;
+        }
+
+        .is-home-style #masthead:not(.is-scrolled) nav ul li a:hover {
+            color: #ffffff !important;
+        }
+
+        .is-home-style #masthead:not(.is-scrolled) nav ul li.current-menu-item a {
+            color: #ffffff !important;
+        }
+
+        .is-home-style #masthead:not(.is-scrolled) nav ul li a::after {
+            background-color: #ffffff;
+        }
+
+        /* Home Page Glassmorphism Button */
         body.home #masthead:not(.is-scrolled) .header-btn {
             background-color: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: none;
+            color: #ffffff !important;
         }
 
         body.home #masthead:not(.is-scrolled) .header-btn:hover {
             background-color: rgba(255, 255, 255, 0.25);
             transform: translateY(-2px);
+            color: #ffffff !important;
         }
 
         body.home #masthead:not(.is-scrolled) .logo-icon {
@@ -123,23 +182,8 @@
                 }
             }
 
-            function adjustHeroMargin() {
-                if (document.body.classList.contains('is-home-style')) {
-                    const main = document.querySelector('main');
-                    if (main && !header.classList.contains('is-scrolled')) {
-                        main.style.marginTop = '-' + header.offsetHeight + 'px';
-                    }
-                }
-            }
-
             window.addEventListener('scroll', handleScroll);
-            window.addEventListener('resize', adjustHeroMargin);
-
             handleScroll(); // Initial check
-
-            // Allow images to load before final height calculation
-            setTimeout(adjustHeroMargin, 100);
-            window.addEventListener('load', adjustHeroMargin);
 
             // Mobile Menu Toggle
             const menuOpenBtn = document.getElementById('mobile-menu-open');

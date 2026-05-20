@@ -536,3 +536,133 @@ add_filter('template_include', function ($template) {
     return $template;
 });
 
+/**
+ * Track Post Views
+ */
+function bookingroom_set_post_views($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count == ''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    } else {
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+function bookingroom_track_post_views($post_id) {
+    if (!is_single()) return;
+    if (empty($post_id)) {
+        global $post;
+        $post_id = $post->ID;    
+    }
+    bookingroom_set_post_views($post_id);
+}
+add_action('wp_head', 'bookingroom_track_post_views');
+
+
+/**
+ * Add About Page Meta Boxes
+ */
+function bookingroom_add_about_meta_boxes() {
+    $post_id = isset($_GET['post']) ? $_GET['post'] : (isset($_POST['post_ID']) ? $_POST['post_ID'] : false);
+    if (!$post_id) return;
+    if (get_post_meta($post_id, '_wp_page_template', true) == 'page-about.php') {
+        add_meta_box('about_hero', 'Khối Hero (Đầu trang)', 'bookingroom_about_hero_cb', 'page', 'normal', 'high');
+        add_meta_box('about_story', 'Khối Câu chuyện', 'bookingroom_about_story_cb', 'page', 'normal', 'high');
+        add_meta_box('about_values', 'Khối Giá trị Cốt lõi', 'bookingroom_about_values_cb', 'page', 'normal', 'high');
+        add_meta_box('about_testimonial', 'Khối Khách hàng đánh giá', 'bookingroom_about_testimonial_cb', 'page', 'normal', 'high');
+    }
+}
+add_action('add_meta_boxes', 'bookingroom_add_about_meta_boxes');
+
+function bookingroom_about_hero_cb($post) {
+    wp_nonce_field('save_about_meta', 'about_meta_nonce');
+    $title = get_post_meta($post->ID, '_about_hero_title', true) ?: 'Về <span class="text-blue-500">Sonata</span> Travel';
+    $subtitle = get_post_meta($post->ID, '_about_hero_subtitle', true) ?: 'Hành trình của chúng tôi bắt đầu từ niềm đam mê khám phá và khát khao mang lại những trải nghiệm nghỉ dưỡng đẳng cấp nhất cho mỗi khách hàng.';
+    echo '<p><strong>Tiêu đề:</strong></p><input type="text" name="about_hero_title" class="widefat" value="'.esc_attr($title).'">';
+    echo '<p><strong>Mô tả:</strong></p><textarea name="about_hero_subtitle" class="widefat" rows="3">'.esc_textarea($subtitle).'</textarea>';
+}
+
+function bookingroom_about_story_cb($post) {
+    $heading = get_post_meta($post->ID, '_about_story_heading', true) ?: 'Kiến tạo những kỷ niệm <br> nghỉ dưỡng vô giá';
+    $content = get_post_meta($post->ID, '_about_story_content', true) ?: '<p>Được thành lập với sứ mệnh nâng tầm trải nghiệm du lịch Việt, **Sonata Travel** không chỉ đơn thuần là một đại lý đặt phòng. Chúng tôi là người bạn đồng hành, giúp bạn tìm kiếm những không gian sống đẳng cấp và tinh tế nhất.</p><p>Mỗi khách sạn, mỗi căn phòng trong hệ thống của chúng tôi đều được lựa chọn kỹ lưỡng dựa trên tiêu chuẩn khắt khe về chất lượng dịch vụ, phong cách kiến trúc và sự tiện nghi.</p>';
+    $stat1_num = get_post_meta($post->ID, '_about_stat1_num', true) ?: '500+';
+    $stat1_label = get_post_meta($post->ID, '_about_stat1_label', true) ?: 'Điểm đến cao cấp';
+    $stat2_num = get_post_meta($post->ID, '_about_stat2_num', true) ?: '15k+';
+    $stat2_label = get_post_meta($post->ID, '_about_stat2_label', true) ?: 'Khách hàng hài lòng';
+    
+    echo '<p><strong>Tiêu đề:</strong></p><input type="text" name="about_story_heading" class="widefat" value="'.esc_attr($heading).'">';
+    echo '<p><strong>Nội dung:</strong></p>';
+    wp_editor($content, 'about_story_content', ['textarea_rows'=>5]);
+    
+    echo '<div style="display:flex; gap:20px; margin-top:20px;">';
+    echo '<div><p><strong>Thống kê 1 (Số):</strong></p><input type="text" name="about_stat1_num" value="'.esc_attr($stat1_num).'"></div>';
+    echo '<div><p><strong>Thống kê 1 (Nhãn):</strong></p><input type="text" name="about_stat1_label" value="'.esc_attr($stat1_label).'"></div>';
+    echo '</div>';
+    
+    echo '<div style="display:flex; gap:20px; margin-top:10px;">';
+    echo '<div><p><strong>Thống kê 2 (Số):</strong></p><input type="text" name="about_stat2_num" value="'.esc_attr($stat2_num).'"></div>';
+    echo '<div><p><strong>Thống kê 2 (Nhãn):</strong></p><input type="text" name="about_stat2_label" value="'.esc_attr($stat2_label).'"></div>';
+    echo '</div>';
+}
+
+function bookingroom_about_testimonial_cb($post) {
+    $quote = get_post_meta($post->ID, '_about_testi_quote', true) ?: '"Dịch vụ của Sonata Travel thật sự vượt ngoài mong đợi. Họ không chỉ tìm cho tôi một căn phòng đẹp, mà còn tư vấn những điểm ăn uống, vui chơi rất tinh tế. Chắc chắn tôi sẽ quay lại."';
+    $name = get_post_meta($post->ID, '_about_testi_name', true) ?: 'Anh Minh Nguyễn';
+    $role = get_post_meta($post->ID, '_about_testi_role', true) ?: 'Giám đốc Điều hành, TechCorp';
+    
+    echo '<p><strong>Nội dung đánh giá:</strong></p><textarea name="about_testi_quote" class="widefat" rows="4">'.esc_textarea($quote).'</textarea>';
+    echo '<p><strong>Tên khách hàng:</strong></p><input type="text" name="about_testi_name" class="widefat" value="'.esc_attr($name).'">';
+    echo '<p><strong>Chức vụ / Công ty:</strong></p><input type="text" name="about_testi_role" class="widefat" value="'.esc_attr($role).'">';
+}
+
+function bookingroom_about_values_cb($post) {
+    for($i=1; $i<=3; $i++) {
+        $title = get_post_meta($post->ID, '_about_val'.$i.'_title', true);
+        $desc = get_post_meta($post->ID, '_about_val'.$i.'_desc', true);
+        
+        if($title === '') {
+            $defaults = ['Chất lượng hàng đầu', 'Giá tốt nhất', 'Hỗ trợ 24/7'];
+            $title = $defaults[$i-1];
+        }
+        if($desc === '') {
+            $default_desc = [
+                'Chúng tôi chỉ hợp tác với các đối tác khách sạn đạt tiêu chuẩn 4-5 sao quốc tế.',
+                'Nhờ mạng lưới đối tác rộng lớn, chúng tôi luôn có mức giá ưu đãi đặc quyền cho khách hàng.',
+                'Đội ngũ chuyên viên của Sonata luôn sẵn sàng hỗ trợ bạn bất kể thời gian nào trong ngày.'
+            ];
+            $desc = $default_desc[$i-1];
+        }
+
+        echo '<div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; background: #f9f9f9;">';
+        echo '<h4>Giá trị '.$i.'</h4>';
+        echo '<p><strong>Tiêu đề:</strong></p><input type="text" name="about_val'.$i.'_title" class="widefat" value="'.esc_attr($title).'">';
+        echo '<p><strong>Mô tả:</strong></p><textarea name="about_val'.$i.'_desc" class="widefat" rows="2">'.esc_textarea($desc).'</textarea>';
+        echo '</div>';
+    }
+}
+
+function bookingroom_save_about_meta($post_id) {
+    if (!isset($_POST['about_meta_nonce']) || !wp_verify_nonce($_POST['about_meta_nonce'], 'save_about_meta')) return;
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
+    if (!current_user_can('edit_post', $post_id)) return;
+
+    $fields = [
+        'about_hero_title', 'about_hero_subtitle',
+        'about_story_heading', 'about_story_content', 'about_stat1_num', 'about_stat1_label', 'about_stat2_num', 'about_stat2_label',
+        'about_testi_quote', 'about_testi_name', 'about_testi_role',
+        'about_val1_title', 'about_val1_desc', 'about_val2_title', 'about_val2_desc', 'about_val3_title', 'about_val3_desc'
+    ];
+    
+    foreach ($fields as $field) {
+        if (isset($_POST[$field])) {
+            $value = ($field === 'about_story_content' || $field === 'about_hero_title' || $field === 'about_hero_subtitle' || $field === 'about_story_heading') ? wp_kses_post($_POST[$field]) : sanitize_textarea_field($_POST[$field]);
+            update_post_meta($post_id, '_' . $field, $value);
+        }
+    }
+}
+add_action('save_post', 'bookingroom_save_about_meta');

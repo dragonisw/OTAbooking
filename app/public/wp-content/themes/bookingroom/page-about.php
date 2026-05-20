@@ -13,11 +13,10 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
                 <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up">
-                    Về <span class="text-blue-500">Sonata</span> Travel
+                    <?php echo get_post_meta(get_the_ID(), '_about_hero_title', true) ?: 'Về <span class="text-blue-500">Sonata</span> Travel'; ?>
                 </h1>
                 <p class="text-xl text-slate-300 leading-relaxed animate-fade-in-up" style="animation-delay: 0.1s">
-                    Hành trình của chúng tôi bắt đầu từ niềm đam mê khám phá và khát khao mang lại những trải nghiệm
-                    nghỉ dưỡng đẳng cấp nhất cho mỗi khách hàng.
+                    <?php echo get_post_meta(get_the_ID(), '_about_hero_subtitle', true) ?: 'Hành trình của chúng tôi bắt đầu từ niềm đam mê khám phá và khát khao mang lại những trải nghiệm nghỉ dưỡng đẳng cấp nhất cho mỗi khách hàng.'; ?>
                 </p>
             </div>
         </div>
@@ -52,28 +51,27 @@
                         <span>Câu chuyện của chúng tôi</span>
                     </div>
                     <h2 class="text-4xl font-bold text-slate-900 mb-8 leading-tight">
-                        Kiến tạo những kỷ niệm <br> nghỉ dưỡng vô giá
+                        <?php echo get_post_meta(get_the_ID(), '_about_story_heading', true) ?: 'Kiến tạo những kỷ niệm <br> nghỉ dưỡng vô giá'; ?>
                     </h2>
-                    <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
-                        <p>
-                            Được thành lập với sứ mệnh nâng tầm trải nghiệm du lịch Việt, **Sonata Travel** không chỉ
-                            đơn thuần là một đại lý đặt phòng. Chúng tôi là người bạn đồng hành, giúp bạn tìm kiếm những
-                            không gian sống đẳng cấp và tinh tế nhất.
-                        </p>
-                        <p>
-                            Mỗi khách sạn, mỗi căn phòng trong hệ thống của chúng tôi đều được lựa chọn kỹ lưỡng dựa
-                            trên tiêu chuẩn khắt khe về chất lượng dịch vụ, phong cách kiến trúc và sự tiện nghi.
-                        </p>
+                    <div class="space-y-6 text-slate-600 text-lg leading-relaxed prose prose-blue max-w-none">
+                        <?php 
+                        $story_content = get_post_meta(get_the_ID(), '_about_story_content', true);
+                        if ($story_content) {
+                            echo apply_filters('the_content', $story_content);
+                        } else {
+                            echo '<p>Được thành lập với sứ mệnh nâng tầm trải nghiệm du lịch Việt, **Sonata Travel** không chỉ đơn thuần là một đại lý đặt phòng. Chúng tôi là người bạn đồng hành, giúp bạn tìm kiếm những không gian sống đẳng cấp và tinh tế nhất.</p><p>Mỗi khách sạn, mỗi căn phòng trong hệ thống của chúng tôi đều được lựa chọn kỹ lưỡng dựa trên tiêu chuẩn khắt khe về chất lượng dịch vụ, phong cách kiến trúc và sự tiện nghi.</p>';
+                        }
+                        ?>
                     </div>
 
                     <div class="grid grid-cols-2 gap-8 mt-12">
                         <div>
-                            <h4 class="text-3xl font-bold text-slate-900 mb-2">500+</h4>
-                            <p class="text-slate-500">Điểm đến cao cấp</p>
+                            <h4 class="text-3xl font-bold text-slate-900 mb-2"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_stat1_num', true) ?: '500+'); ?></h4>
+                            <p class="text-slate-500"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_stat1_label', true) ?: 'Điểm đến cao cấp'); ?></p>
                         </div>
                         <div>
-                            <h4 class="text-3xl font-bold text-slate-900 mb-2">15k+</h4>
-                            <p class="text-slate-500">Khách hàng hài lòng</p>
+                            <h4 class="text-3xl font-bold text-slate-900 mb-2"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_stat2_num', true) ?: '15k+'); ?></h4>
+                            <p class="text-slate-500"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_stat2_label', true) ?: 'Khách hàng hài lòng'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -101,9 +99,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">Chất lượng hàng đầu</h3>
-                    <p class="text-slate-500 leading-relaxed">Chúng tôi chỉ hợp tác với các đối tác khách sạn đạt tiêu
-                        chuẩn 4-5 sao quốc tế.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_val1_title', true) ?: 'Chất lượng hàng đầu'); ?></h3>
+                    <p class="text-slate-500 leading-relaxed"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_val1_desc', true) ?: 'Chúng tôi chỉ hợp tác với các đối tác khách sạn đạt tiêu chuẩn 4-5 sao quốc tế.'); ?></p>
                 </div>
 
                 <!-- Value 2 -->
@@ -116,9 +113,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">Giá tốt nhất</h3>
-                    <p class="text-slate-500 leading-relaxed">Nhờ mạng lưới đối tác rộng lớn, chúng tôi luôn có mức giá
-                        ưu đãi đặc quyền cho khách hàng.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_val2_title', true) ?: 'Giá tốt nhất'); ?></h3>
+                    <p class="text-slate-500 leading-relaxed"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_val2_desc', true) ?: 'Nhờ mạng lưới đối tác rộng lớn, chúng tôi luôn có mức giá ưu đãi đặc quyền cho khách hàng.'); ?></p>
                 </div>
 
                 <!-- Value 3 -->
@@ -131,9 +127,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">Hỗ trợ 24/7</h3>
-                    <p class="text-slate-500 leading-relaxed">Đội ngũ chuyên viên của Sonata luôn sẵn sàng hỗ trợ bạn
-                        bất kể thời gian nào trong ngày.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_val3_title', true) ?: 'Hỗ trợ 24/7'); ?></h3>
+                    <p class="text-slate-500 leading-relaxed"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_val3_desc', true) ?: 'Đội ngũ chuyên viên của Sonata luôn sẵn sàng hỗ trợ bạn bất kể thời gian nào trong ngày.'); ?></p>
                 </div>
             </div>
         </div>
@@ -180,13 +175,11 @@
                             </svg>
                         </div>
                         <blockquote class="text-2xl text-white font-medium italic mb-6 leading-relaxed">
-                            "Dịch vụ của Sonata Travel thật sự vượt ngoài mong đợi. Họ không chỉ tìm cho tôi một căn
-                            phòng đẹp, mà còn tư vấn những điểm ăn uống, vui chơi rất tinh tế. Chắc chắn tôi sẽ quay
-                            lại."
+                            <?php echo wp_kses_post(get_post_meta(get_the_ID(), '_about_testi_quote', true) ?: '"Dịch vụ của Sonata Travel thật sự vượt ngoài mong đợi. Họ không chỉ tìm cho tôi một căn phòng đẹp, mà còn tư vấn những điểm ăn uống, vui chơi rất tinh tế. Chắc chắn tôi sẽ quay lại."'); ?>
                         </blockquote>
                         <div class="text-white">
-                            <div class="font-bold text-lg">Anh Minh Nguyễn</div>
-                            <div class="text-blue-400">Giám đốc Điều hành, TechCorp</div>
+                            <div class="font-bold text-lg"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_testi_name', true) ?: 'Anh Minh Nguyễn'); ?></div>
+                            <div class="text-blue-400"><?php echo esc_html(get_post_meta(get_the_ID(), '_about_testi_role', true) ?: 'Giám đốc Điều hành, TechCorp'); ?></div>
                         </div>
                     </div>
                 </div>
