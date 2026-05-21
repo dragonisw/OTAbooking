@@ -766,4 +766,30 @@ function bookingroom_room_search_template($template) {
 }
 add_filter('template_include', 'bookingroom_room_search_template');
 
+/**
+ * Điều hướng template phòng:
+ *  - Mặc định (click ảnh) → single-thongtin.php (trang thông tin phòng)
+ *  - Có ?step=book         → single-room.php    (trang đặt phòng / thanh toán)
+ */
+function bookingroom_single_room_template($template) {
+    if (is_singular('room')) {
+        $step = isset($_GET['step']) ? sanitize_key($_GET['step']) : '';
+        if ($step === 'book') {
+            // Trang đặt phòng / thanh toán
+            $booking_template = locate_template(array('single-room.php'));
+            if (!empty($booking_template)) {
+                return $booking_template;
+            }
+        } else {
+            // Trang thông tin phòng (mặc định)
+            $info_template = locate_template(array('single-thongtin.php'));
+            if (!empty($info_template)) {
+                return $info_template;
+            }
+        }
+    }
+    return $template;
+}
+add_filter('template_include', 'bookingroom_single_room_template', 20);
+
 
