@@ -160,6 +160,9 @@ function bookingroom_process_booking()
         update_post_meta($booking_id, '_phone', $phone);
         update_post_meta($booking_id, '_email', $email);
         update_post_meta($booking_id, '_status', 'pending');
+        if (isset($_POST['selected_rooms'])) {
+            update_post_meta($booking_id, '_selected_rooms', sanitize_text_field($_POST['selected_rooms']));
+        }
 
         wp_send_json_success(array(
             'message' => 'Đặt phòng thành công! Mã đặt phòng của bạn là: ' . $booking_id,
@@ -466,6 +469,30 @@ function bookingroom_customize_register($wp_customize)
         'type' => 'url',
     ));
 
+    // Setting: Hotline/Phone Number
+    $wp_customize->add_setting('bookingroom_hotline', array(
+        'default' => '(84-252) 381 2233',
+        'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control('bookingroom_hotline', array(
+        'label' => __('Số điện thoại hỗ trợ đặt phòng (Hotline)', 'bookingroom'),
+        'section' => 'booking_engine_section',
+        'type' => 'text',
+    ));
+
+    // Setting: Booking Email
+    $wp_customize->add_setting('bookingroom_email', array(
+        'default' => 'reservation@poshanuresort.com.vn',
+        'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_email',
+    ));
+    $wp_customize->add_control('bookingroom_email', array(
+        'label' => __('Email hỗ trợ đặt phòng', 'bookingroom'),
+        'section' => 'booking_engine_section',
+        'type' => 'email',
+    ));
+
     // Setting: Google Maps API Key
     $wp_customize->add_setting('google_maps_api_key', array(
         'default' => '',
@@ -666,3 +693,77 @@ function bookingroom_save_about_meta($post_id) {
     }
 }
 add_action('save_post', 'bookingroom_save_about_meta');
+
+
+/**
+ * Get the number of available rooms for a specific room type during a date range
+ */
+function bookingroom_get_available_rooms($room_id, $check_in, $check_out) {
+    // 1. Get total rooms of this room type
+    $room_numbers_meta = get_post_meta($room_id, '_room_numbers', true);
+    if (!empty($room_numbers_meta)) {
+        $all_rooms = array_map('trim', explode(',', $room_numbers_meta));
+        $total_rooms = count($all_rooms);
+    } else {
+        $total_rooms = 10; // Default to 10 if not defined
+    }
+
+    // 2. Query bookings that overlap with the selected dates
+    // Booking overlaps if: booking._check_in < select.check_out AND booking._check_out > select.check_in
+    $args = array(
+        'post_type' => 'booking',
+        'posts_per_page' => -1,
+        'post_status' => 'publish',
+        'meta_query' => array(
+            'relation' => 'AND',
+            array(
+                'key' => '_room_id',
+                'value' => $room_id,
+                'compare' => '='
+            ),
+            array(
+                'key' => '_check_in',
+                'value' => $check_out,
+                'compare' => '<',
+                'type' => 'DATE'
+            ),
+            array(
+                'key' => '_check_out',
+                'value' => $check_in,
+                'compare' => '>',
+                'type' => 'DATE'
+            ),
+            array(
+                'key' => '_status',
+                'value' => 'cancelled',
+                'compare' => '!=',
+            )
+        )
+    );
+
+    $bookings_query = new WP_Query($args);
+    $booked_count = $bookings_query->post_count;
+
+    $available_rooms = $total_rooms - $booked_count;
+    if ($available_rooms < 0) {
+        $available_rooms = 0;
+    }
+
+    return $available_rooms;
+}
+
+/**
+ * Route room custom post type search results to archive-room.php template
+ */
+function bookingroom_room_search_template($template) {
+    if (is_search() && get_query_var('post_type') === 'room') {
+        $new_template = locate_template(array('archive-room.php'));
+        if (!empty($new_template)) {
+            return $new_template;
+        }
+    }
+    return $template;
+}
+add_filter('template_include', 'bookingroom_room_search_template');
+
+

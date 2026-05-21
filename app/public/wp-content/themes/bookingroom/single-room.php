@@ -261,13 +261,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const basePrice = parseInt(document.querySelector('[data-base-price]').getAttribute('data-base-price')) || 1500000;
     let nights = 1;
 
-    // Initialize dates (today and tomorrow)
-    const today = new Date();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    
-    checkInInput.valueAsDate = today;
-    checkOutInput.valueAsDate = tomorrow;
+    // Initialize dates from URL params or leave empty
+    const urlParams = new URLSearchParams(window.location.search);
+    const paramCheckIn = urlParams.get('check_in');
+    const paramCheckOut = urlParams.get('check_out');
+
+    if (paramCheckIn) {
+        checkInInput.value = paramCheckIn;
+    } else {
+        checkInInput.value = '';
+    }
+
+    if (paramCheckOut) {
+        checkOutInput.value = paramCheckOut;
+    } else {
+        checkOutInput.value = '';
+    }
 
     function formatMoney(amount) {
         return new Intl.NumberFormat('vi-VN').format(amount) + 'đ';
@@ -276,11 +285,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function calculateNights() {
         const start = new Date(checkInInput.value);
         const end = new Date(checkOutInput.value);
-        if (start && end && end > start) {
+        if (start && end && end > start && !isNaN(start.getTime()) && !isNaN(end.getTime())) {
             const diffTime = Math.abs(end - start);
             nights = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
         } else {
-            nights = 1;
+            nights = 0;
         }
         nightsCountEl.textContent = nights + ' đêm';
         updatePrice();
@@ -407,6 +416,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initial calculation
+    calculateNights();
     updateSidebar();
 });
 </script>

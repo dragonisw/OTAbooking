@@ -931,28 +931,21 @@
         const checkOutInput = document.getElementById('check-out-date');
 
         if (checkInInput && checkOutInput) {
-            // Initialize dates (today and tomorrow)
-            const today = new Date();
-            const tomorrow = new Date(today);
-            tomorrow.setDate(tomorrow.getDate() + 1);
-
             // Format to YYYY-MM-DD
             const formatDate = (date) => {
+                if (!date || isNaN(date.getTime())) return '';
                 const year = date.getFullYear();
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const day = String(date.getDate()).padStart(2, '0');
                 return `${year}-${month}-${day}`;
             };
 
-            checkInInput.value = formatDate(today);
-            checkOutInput.value = formatDate(tomorrow);
-
             // Ensure check-out is after check-in
             checkInInput.addEventListener('change', function () {
                 const checkIn = new Date(this.value);
                 const checkOut = new Date(checkOutInput.value);
 
-                if (checkOut <= checkIn) {
+                if (!isNaN(checkIn.getTime()) && !isNaN(checkOut.getTime()) && checkOut <= checkIn) {
                     const nextDay = new Date(checkIn);
                     nextDay.setDate(nextDay.getDate() + 1);
                     checkOutInput.value = formatDate(nextDay);
@@ -963,7 +956,7 @@
                 const checkIn = new Date(checkInInput.value);
                 const checkOut = new Date(this.value);
 
-                if (checkOut <= checkIn) {
+                if (!isNaN(checkIn.getTime()) && !isNaN(checkOut.getTime()) && checkOut <= checkIn) {
                     const prevDay = new Date(checkOut);
                     prevDay.setDate(prevDay.getDate() - 1);
                     checkInInput.value = formatDate(prevDay);

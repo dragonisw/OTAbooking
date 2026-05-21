@@ -168,26 +168,23 @@
 
         if (checkInInput && checkOutInput) {
             const today = new Date();
-            const tomorrow = new Date(today);
-            tomorrow.setDate(tomorrow.getDate() + 1);
 
             const formatDate = (date) => {
+                if (!date || isNaN(date.getTime())) return '';
                 const year = date.getFullYear();
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const day = String(date.getDate()).padStart(2, '0');
                 return `${year}-${month}-${day}`;
             };
-
-            checkInInput.value = formatDate(today);
-            checkOutInput.value = formatDate(tomorrow);
             
             checkInInput.min = formatDate(today);
-            checkOutInput.min = formatDate(tomorrow);
 
             checkInInput.addEventListener('change', function () {
                 const checkIn = new Date(this.value);
+                if (isNaN(checkIn.getTime())) return;
+
                 const checkOut = new Date(checkOutInput.value);
-                if (checkOut <= checkIn) {
+                if (!isNaN(checkOut.getTime()) && checkOut <= checkIn) {
                     const nextDay = new Date(checkIn);
                     nextDay.setDate(nextDay.getDate() + 1);
                     checkOutInput.value = formatDate(nextDay);
